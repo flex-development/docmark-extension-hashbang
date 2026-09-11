@@ -1692,7 +1692,7 @@ __metadata:
     "@flex-development/docmark": "npm:1.0.0-alpha.9"
     "@flex-development/docmark-factory-markers": "npm:1.0.0-alpha.8"
     "@flex-development/docmark-factory-space": "npm:1.0.0-alpha.9"
-    "@flex-development/docmark-grammar": "npm:1.0.0-alpha.9"
+    "@flex-development/docmark-grammar": "npm:1.0.0-dev.7"
     "@flex-development/docmark-util-symbol": "npm:1.0.0-alpha.6"
     "@flex-development/docmark-util-types": "npm:1.0.0-alpha.9"
     "@flex-development/eslint-config": "npm:1.1.1"
@@ -1767,6 +1767,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@flex-development/docmark-factory-space@npm:1.0.0-dev.7":
+  version: 1.0.0-dev.7
+  resolution: "@flex-development/docmark-factory-space@npm:1.0.0-dev.7"
+  dependencies:
+    "@flex-development/docmark-util-types": "npm:1.0.0-dev.7"
+    "@flex-development/mark-util-character": "npm:1.1.0"
+    micromark-util-types: "npm:2.0.2"
+  checksum: 10/a9a54d0888606302e9196acd7e1f90dd2aee480eab83be93eed2ece36821deb85f1fc0993f2bef71f22a4eebb0c7e82d633caf47937b3f3483c1e96cd42875f8
+  languageName: node
+  linkType: hard
+
 "@flex-development/docmark-grammar@npm:1.0.0-alpha.9":
   version: 1.0.0-alpha.9
   resolution: "@flex-development/docmark-grammar@npm:1.0.0-alpha.9"
@@ -1777,6 +1788,19 @@ __metadata:
     "@flex-development/mark-util-character": "npm:1.1.0"
     devlop: "npm:1.1.0"
   checksum: 10/63683ababa5ac9ec43f3965285fdfe27c4758a1dd5169b25252095aeebdf784319fbe6bc45bd048373dc9c268e8d97604df67ff937d7c2cd55313405c478347c
+  languageName: node
+  linkType: hard
+
+"@flex-development/docmark-grammar@npm:1.0.0-dev.7":
+  version: 1.0.0-dev.7
+  resolution: "@flex-development/docmark-grammar@npm:1.0.0-dev.7"
+  dependencies:
+    "@flex-development/docmark-factory-space": "npm:1.0.0-dev.7"
+    "@flex-development/docmark-util-symbol": "npm:1.0.0-dev.7"
+    "@flex-development/docmark-util-types": "npm:1.0.0-dev.7"
+    "@flex-development/mark-util-character": "npm:1.1.0"
+    devlop: "npm:1.1.0"
+  checksum: 10/3930bcf77d9f49b3b72037719996fc38ab58535711ee8f4b497f70bbfb49ae1bfea8c121bc49779d74cc515867a8eb8a5756a22a66269755fce6e54cc92feb5a
   languageName: node
   linkType: hard
 
@@ -1810,6 +1834,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@flex-development/docmark-util-symbol@npm:1.0.0-dev.7":
+  version: 1.0.0-dev.7
+  resolution: "@flex-development/docmark-util-symbol@npm:1.0.0-dev.7"
+  checksum: 10/5e8337608612e5d691464ba280505c2492cf24164f706def157d5448776ddebca54222cb71cd168793069c4e63300a3d015a3198b25594775758c9d6cb3fd11e
+  languageName: node
+  linkType: hard
+
 "@flex-development/docmark-util-types@npm:1.0.0-alpha.9":
   version: 1.0.0-alpha.9
   resolution: "@flex-development/docmark-util-types@npm:1.0.0-alpha.9"
@@ -1818,6 +1849,17 @@ __metadata:
     "@types/debug": "npm:4.1.13"
     micromark-util-types: "npm:2.0.2"
   checksum: 10/9de4b71dfa6bbf3e13400a00b06347cfc99fea29b8a7c49bcbc331c80240d9042807ee551f979a9218abcbf2d855c09398b2828d5da87b550901f1edf48d6567
+  languageName: node
+  linkType: hard
+
+"@flex-development/docmark-util-types@npm:1.0.0-dev.7":
+  version: 1.0.0-dev.7
+  resolution: "@flex-development/docmark-util-types@npm:1.0.0-dev.7"
+  dependencies:
+    "@flex-development/mark": "npm:1.0.0-alpha.4"
+    "@types/debug": "npm:4.1.13"
+    micromark-util-types: "npm:2.0.2"
+  checksum: 10/f8767042d4e77abf4cc855226031e1dc60c18a841a922baef3bc4b7f583025e04a477d0cdc2e053e6229d32ff6a50508671ee8b8dd280f36cc13e9e18f6b3a35
   languageName: node
   linkType: hard
 
