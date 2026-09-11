@@ -355,7 +355,7 @@ e.g:
 2. [Create or update version manifest][yarn-version]
    - `yarn version`
 3. Create release chore commit
-   - `yarn release 1.0.0-alpha.1`
+   - `yarn release`
 4. Push release chore commit
 5. Monitor workflows
    1. [`release-chore`](.github/workflows/release-chore.yml)
