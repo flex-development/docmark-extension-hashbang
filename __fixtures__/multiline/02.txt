@@ -1,4 +1,0 @@
-
-    
-    # get workspace directory.
-    # skip root workspace.

@@ -1,0 +1,15 @@
+# Add To Project
+#
+# Add new issues and pull requests to the project board.
+#
+# References:
+#
+# - https://docs.github.com/actions/learn-github-actions/contexts
+# - https://docs.github.com/actions/learn-github-actions/expressions
+# - https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#issues
+# - https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#pull_request
+# - https://docs.github.com/webhooks-and-events/webhooks/webhook-events-and-payloads#issues
+# - https://docs.github.com/webhooks-and-events/webhooks/webhook-events-and-payloads#pull_request
+# - https://github.com/actions/add-to-project
+# - https://github.com/actions/create-github-app-token
+# - https://github.com/hmarr/debug-action

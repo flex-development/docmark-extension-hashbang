@@ -3,4 +3,5 @@
  * @module docmark-extension-hashbang
  */
 
-export default {}
+export { default as hashbang } from './comment.mts'
+export { default, default as hashbangs } from './comments.mts'

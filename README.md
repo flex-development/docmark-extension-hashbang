@@ -80,11 +80,11 @@ This package exports the identifiers [`hashbang`][api-hashbang] and [`hashbangs`
 
 The default export is `hashbangs`.
 
-### `hashbangs`
+### [`hashbangs`](./src/comments.mts)
 
 **TODO**: `hashbangs`
 
-### `hashbang`
+### [`hashbang`](./src/comment.mts)
 
 **TODO**: `hashbang`
 

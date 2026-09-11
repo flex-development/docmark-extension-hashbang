@@ -2,6 +2,8 @@
 
 exports[`e2e:docmark-extension-hashbang > should expose public api 1`] = `
 [
+  "hashbang",
   "default",
+  "hashbangs",
 ]
 `;

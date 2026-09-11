@@ -1,0 +1,4089 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`e2e:comments > should parse hashbang comments ("opener-only/01.txt",undefined) 1`] = `
+[
+  [
+    "enter",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "exit",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "eoc",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "eoc",
+    },
+  ],
+]
+`;
+
+exports[`e2e:comments > should parse hashbang comments ("opener-only/02.txt",undefined) 1`] = `
+[
+  [
+    "enter",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": 0,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 3,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 1,
+        "line": 2,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "lineEndingBlank",
+      "value": "
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 1,
+        "line": 2,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "lineEndingBlank",
+      "value": "
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": 0,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 3,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 5,
+        "column": 1,
+        "line": 3,
+        "offset": 6,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 4,
+        "column": 1,
+        "line": 3,
+        "offset": 6,
+      },
+      "type": "eoc",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 5,
+        "column": 1,
+        "line": 3,
+        "offset": 6,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 4,
+        "column": 1,
+        "line": 3,
+        "offset": 6,
+      },
+      "type": "eoc",
+    },
+  ],
+]
+`;
+
+exports[`e2e:comments > should parse hashbang comments ("opener-only/03.txt",undefined) 1`] = `
+[
+  [
+    "enter",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "linePrefix",
+      "value": " ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "linePrefix",
+      "value": " ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "eoc",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "eoc",
+    },
+  ],
+]
+`;
+
+exports[`e2e:comments > should parse hashbang comments ("opener-only/04.txt",undefined) 1`] = `
+[
+  [
+    "enter",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 4,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "linePrefix",
+      "value": " ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "linePrefix",
+      "value": " ",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "lineEndingBlank",
+      "value": "
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "lineEndingBlank",
+      "value": "
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 4,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 3,
+        "column": 1,
+        "line": 2,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 4,
+      },
+      "type": "eoc",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 3,
+        "column": 1,
+        "line": 2,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 4,
+      },
+      "type": "eoc",
+    },
+  ],
+]
+`;
+
+exports[`e2e:comments > should parse hashbang comments ("path-only/01.txt",undefined) 1`] = `
+[
+  [
+    "enter",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 10,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 10,
+        "line": 1,
+        "offset": 9,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "interpreterPath",
+      "value": "/bin/sh",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 10,
+        "line": 1,
+        "offset": 9,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "interpreterPath",
+      "value": "/bin/sh",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 10,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 10,
+        "line": 1,
+        "offset": 9,
+      },
+      "type": "lineEnding",
+      "value": "
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 10,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 10,
+        "line": 1,
+        "offset": 9,
+      },
+      "type": "lineEnding",
+      "value": "
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 10,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 3,
+        "column": 1,
+        "line": 2,
+        "offset": 10,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 10,
+      },
+      "type": "eoc",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 3,
+        "column": 1,
+        "line": 2,
+        "offset": 10,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 10,
+      },
+      "type": "eoc",
+    },
+  ],
+]
+`;
+
+exports[`e2e:comments > should parse hashbang comments ("path-only/02.txt",undefined) 1`] = `
+[
+  [
+    "enter",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 17,
+        "line": 1,
+        "offset": 16,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "commentPadding",
+      "value": " ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "commentPadding",
+      "value": " ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "whitespace",
+      "value": " ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "start": {
+        "_bufferIndex": 3,
+        "_index": 0,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "type": "whitespace",
+      "value": " ",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 17,
+        "line": 1,
+        "offset": 16,
+      },
+      "start": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "type": "interpreterPath",
+      "value": "/usr/bin/env",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 17,
+        "line": 1,
+        "offset": 16,
+      },
+      "start": {
+        "_bufferIndex": 4,
+        "_index": 0,
+        "column": 5,
+        "line": 1,
+        "offset": 4,
+      },
+      "type": "interpreterPath",
+      "value": "/usr/bin/env",
+    },
+  ],
+  [
+    "exit",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 17,
+        "line": 1,
+        "offset": 16,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 17,
+        "line": 1,
+        "offset": 16,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 17,
+        "line": 1,
+        "offset": 16,
+      },
+      "type": "eoc",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 17,
+        "line": 1,
+        "offset": 16,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 17,
+        "line": 1,
+        "offset": 16,
+      },
+      "type": "eoc",
+    },
+  ],
+]
+`;
+
+exports[`e2e:comments > should parse hashbang comments ("path-only/03.txt",undefined) 1`] = `
+[
+  [
+    "enter",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 14,
+        "line": 1,
+        "offset": 13,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 10,
+        "_index": 0,
+        "column": 11,
+        "line": 1,
+        "offset": 10,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "interpreterPath",
+      "value": "/bin/zsh",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 10,
+        "_index": 0,
+        "column": 11,
+        "line": 1,
+        "offset": 10,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "interpreterPath",
+      "value": "/bin/zsh",
+    },
+  ],
+  [
+    "enter",
+    {
+      "_trailing": true,
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 14,
+        "line": 1,
+        "offset": 13,
+      },
+      "start": {
+        "_bufferIndex": 10,
+        "_index": 0,
+        "column": 11,
+        "line": 1,
+        "offset": 10,
+      },
+      "type": "whitespace",
+      "value": "   ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "_trailing": true,
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 14,
+        "line": 1,
+        "offset": 13,
+      },
+      "start": {
+        "_bufferIndex": 10,
+        "_index": 0,
+        "column": 11,
+        "line": 1,
+        "offset": 10,
+      },
+      "type": "whitespace",
+      "value": "   ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 14,
+        "line": 1,
+        "offset": 13,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 14,
+        "line": 1,
+        "offset": 13,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 14,
+        "line": 1,
+        "offset": 13,
+      },
+      "type": "eoc",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 14,
+        "line": 1,
+        "offset": 13,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 14,
+        "line": 1,
+        "offset": 13,
+      },
+      "type": "eoc",
+    },
+  ],
+]
+`;
+
+exports[`e2e:comments > should parse hashbang comments ("path-only/04.txt",undefined) 1`] = `
+[
+  [
+    "enter",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 15,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 11,
+        "_index": 0,
+        "column": 12,
+        "line": 1,
+        "offset": 11,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "interpreterPath",
+      "value": "/bin/bash",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 11,
+        "_index": 0,
+        "column": 12,
+        "line": 1,
+        "offset": 11,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "interpreterPath",
+      "value": "/bin/bash",
+    },
+  ],
+  [
+    "enter",
+    {
+      "_trailing": true,
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "start": {
+        "_bufferIndex": 11,
+        "_index": 0,
+        "column": 12,
+        "line": 1,
+        "offset": 11,
+      },
+      "type": "whitespace",
+      "value": "   ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "_trailing": true,
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "start": {
+        "_bufferIndex": 11,
+        "_index": 0,
+        "column": 12,
+        "line": 1,
+        "offset": 11,
+      },
+      "type": "whitespace",
+      "value": "   ",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "type": "lineEnding",
+      "value": "
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "type": "lineEnding",
+      "value": "
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 15,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 3,
+        "column": 1,
+        "line": 2,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 15,
+      },
+      "type": "eoc",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 3,
+        "column": 1,
+        "line": 2,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 15,
+      },
+      "type": "eoc",
+    },
+  ],
+]
+`;
+
+exports[`e2e:comments > should parse hashbang comments ("with-arguments/01.txt",undefined) 1`] = `
+[
+  [
+    "enter",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 18,
+        "line": 1,
+        "offset": 17,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 11,
+        "_index": 0,
+        "column": 12,
+        "line": 1,
+        "offset": 11,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "interpreterPath",
+      "value": "/bin/bash",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 11,
+        "_index": 0,
+        "column": 12,
+        "line": 1,
+        "offset": 11,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "interpreterPath",
+      "value": "/bin/bash",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 12,
+        "_index": 0,
+        "column": 13,
+        "line": 1,
+        "offset": 12,
+      },
+      "start": {
+        "_bufferIndex": 11,
+        "_index": 0,
+        "column": 12,
+        "line": 1,
+        "offset": 11,
+      },
+      "type": "whitespace",
+      "value": " ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 12,
+        "_index": 0,
+        "column": 13,
+        "line": 1,
+        "offset": 12,
+      },
+      "start": {
+        "_bufferIndex": 11,
+        "_index": 0,
+        "column": 12,
+        "line": 1,
+        "offset": 11,
+      },
+      "type": "whitespace",
+      "value": " ",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "start": {
+        "_bufferIndex": 12,
+        "_index": 0,
+        "column": 13,
+        "line": 1,
+        "offset": 12,
+      },
+      "type": "interpreterArgument",
+      "value": "-e",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "start": {
+        "_bufferIndex": 12,
+        "_index": 0,
+        "column": 13,
+        "line": 1,
+        "offset": 12,
+      },
+      "type": "interpreterArgument",
+      "value": "-e",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "type": "whitespace",
+      "value": " ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "type": "whitespace",
+      "value": " ",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 18,
+        "line": 1,
+        "offset": 17,
+      },
+      "start": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "type": "interpreterArgument",
+      "value": "-u",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 18,
+        "line": 1,
+        "offset": 17,
+      },
+      "start": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "type": "interpreterArgument",
+      "value": "-u",
+    },
+  ],
+  [
+    "exit",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 18,
+        "line": 1,
+        "offset": 17,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 18,
+        "line": 1,
+        "offset": 17,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 18,
+        "line": 1,
+        "offset": 17,
+      },
+      "type": "eoc",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 18,
+        "line": 1,
+        "offset": 17,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 18,
+        "line": 1,
+        "offset": 17,
+      },
+      "type": "eoc",
+    },
+  ],
+]
+`;
+
+exports[`e2e:comments > should parse hashbang comments ("with-arguments/02.txt",undefined) 1`] = `
+[
+  [
+    "enter",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 20,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "interpreterPath",
+      "value": "/usr/bin/env",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "interpreterPath",
+      "value": "/usr/bin/env",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "type": "whitespace",
+      "value": " ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "type": "whitespace",
+      "value": " ",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 20,
+        "line": 1,
+        "offset": 19,
+      },
+      "start": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "type": "interpreterArgument",
+      "value": "node",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 20,
+        "line": 1,
+        "offset": 19,
+      },
+      "start": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "type": "interpreterArgument",
+      "value": "node",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 20,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 20,
+        "line": 1,
+        "offset": 19,
+      },
+      "type": "lineEnding",
+      "value": "
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 20,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 20,
+        "line": 1,
+        "offset": 19,
+      },
+      "type": "lineEnding",
+      "value": "
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 20,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 3,
+        "column": 1,
+        "line": 2,
+        "offset": 20,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 20,
+      },
+      "type": "eoc",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 3,
+        "column": 1,
+        "line": 2,
+        "offset": 20,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 20,
+      },
+      "type": "eoc",
+    },
+  ],
+]
+`;
+
+exports[`e2e:comments > should parse hashbang comments ("with-arguments/03.txt",undefined) 1`] = `
+[
+  [
+    "enter",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 44,
+        "line": 1,
+        "offset": 43,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "interpreterPath",
+      "value": "/usr/bin/env",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "interpreterPath",
+      "value": "/usr/bin/env",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "type": "whitespace",
+      "value": " ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "type": "whitespace",
+      "value": " ",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 19,
+        "_index": 0,
+        "column": 20,
+        "line": 1,
+        "offset": 19,
+      },
+      "start": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "type": "interpreterArgument",
+      "value": "node",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 19,
+        "_index": 0,
+        "column": 20,
+        "line": 1,
+        "offset": 19,
+      },
+      "start": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "type": "interpreterArgument",
+      "value": "node",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 20,
+        "_index": 0,
+        "column": 21,
+        "line": 1,
+        "offset": 20,
+      },
+      "start": {
+        "_bufferIndex": 19,
+        "_index": 0,
+        "column": 20,
+        "line": 1,
+        "offset": 19,
+      },
+      "type": "whitespace",
+      "value": " ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 20,
+        "_index": 0,
+        "column": 21,
+        "line": 1,
+        "offset": 20,
+      },
+      "start": {
+        "_bufferIndex": 19,
+        "_index": 0,
+        "column": 20,
+        "line": 1,
+        "offset": 19,
+      },
+      "type": "whitespace",
+      "value": " ",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 40,
+        "_index": 0,
+        "column": 41,
+        "line": 1,
+        "offset": 40,
+      },
+      "start": {
+        "_bufferIndex": 20,
+        "_index": 0,
+        "column": 21,
+        "line": 1,
+        "offset": 20,
+      },
+      "type": "interpreterArgument",
+      "value": "--conditions=docmark",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 40,
+        "_index": 0,
+        "column": 41,
+        "line": 1,
+        "offset": 40,
+      },
+      "start": {
+        "_bufferIndex": 20,
+        "_index": 0,
+        "column": 21,
+        "line": 1,
+        "offset": 20,
+      },
+      "type": "interpreterArgument",
+      "value": "--conditions=docmark",
+    },
+  ],
+  [
+    "enter",
+    {
+      "_trailing": true,
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 44,
+        "line": 1,
+        "offset": 43,
+      },
+      "start": {
+        "_bufferIndex": 40,
+        "_index": 0,
+        "column": 41,
+        "line": 1,
+        "offset": 40,
+      },
+      "type": "whitespace",
+      "value": "   ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "_trailing": true,
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 44,
+        "line": 1,
+        "offset": 43,
+      },
+      "start": {
+        "_bufferIndex": 40,
+        "_index": 0,
+        "column": 41,
+        "line": 1,
+        "offset": 40,
+      },
+      "type": "whitespace",
+      "value": "   ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 44,
+        "line": 1,
+        "offset": 43,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 44,
+        "line": 1,
+        "offset": 43,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 44,
+        "line": 1,
+        "offset": 43,
+      },
+      "type": "eoc",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 44,
+        "line": 1,
+        "offset": 43,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 44,
+        "line": 1,
+        "offset": 43,
+      },
+      "type": "eoc",
+    },
+  ],
+]
+`;
+
+exports[`e2e:comments > should parse hashbang comments ("with-arguments/04.txt",undefined) 1`] = `
+[
+  [
+    "enter",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 54,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentMarker",
+      "value": "#",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 1,
+        "_index": 0,
+        "column": 2,
+        "line": 1,
+        "offset": 1,
+      },
+      "type": "commentMarker",
+      "value": "!",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "commentLinePrefix",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "interpreterPath",
+      "value": "/usr/bin/env",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "interpreterPath",
+      "value": "/usr/bin/env",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "type": "whitespace",
+      "value": " ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": 14,
+        "_index": 0,
+        "column": 15,
+        "line": 1,
+        "offset": 14,
+      },
+      "type": "whitespace",
+      "value": " ",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 19,
+        "_index": 0,
+        "column": 20,
+        "line": 1,
+        "offset": 19,
+      },
+      "start": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "type": "interpreterArgument",
+      "value": "node",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 19,
+        "_index": 0,
+        "column": 20,
+        "line": 1,
+        "offset": 19,
+      },
+      "start": {
+        "_bufferIndex": 15,
+        "_index": 0,
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "type": "interpreterArgument",
+      "value": "node",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 20,
+        "_index": 0,
+        "column": 21,
+        "line": 1,
+        "offset": 20,
+      },
+      "start": {
+        "_bufferIndex": 19,
+        "_index": 0,
+        "column": 20,
+        "line": 1,
+        "offset": 19,
+      },
+      "type": "whitespace",
+      "value": " ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 20,
+        "_index": 0,
+        "column": 21,
+        "line": 1,
+        "offset": 20,
+      },
+      "start": {
+        "_bufferIndex": 19,
+        "_index": 0,
+        "column": 20,
+        "line": 1,
+        "offset": 19,
+      },
+      "type": "whitespace",
+      "value": " ",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": 50,
+        "_index": 0,
+        "column": 51,
+        "line": 1,
+        "offset": 50,
+      },
+      "start": {
+        "_bufferIndex": 20,
+        "_index": 0,
+        "column": 21,
+        "line": 1,
+        "offset": 20,
+      },
+      "type": "interpreterArgument",
+      "value": "--experimental-transform-types",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": 50,
+        "_index": 0,
+        "column": 51,
+        "line": 1,
+        "offset": 50,
+      },
+      "start": {
+        "_bufferIndex": 20,
+        "_index": 0,
+        "column": 21,
+        "line": 1,
+        "offset": 20,
+      },
+      "type": "interpreterArgument",
+      "value": "--experimental-transform-types",
+    },
+  ],
+  [
+    "enter",
+    {
+      "_trailing": true,
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 54,
+        "line": 1,
+        "offset": 53,
+      },
+      "start": {
+        "_bufferIndex": 50,
+        "_index": 0,
+        "column": 51,
+        "line": 1,
+        "offset": 50,
+      },
+      "type": "whitespace",
+      "value": "   ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "_trailing": true,
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 54,
+        "line": 1,
+        "offset": 53,
+      },
+      "start": {
+        "_bufferIndex": 50,
+        "_index": 0,
+        "column": 51,
+        "line": 1,
+        "offset": 50,
+      },
+      "type": "whitespace",
+      "value": "   ",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 54,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 54,
+        "line": 1,
+        "offset": 53,
+      },
+      "type": "lineEnding",
+      "value": "
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 54,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 54,
+        "line": 1,
+        "offset": 53,
+      },
+      "type": "lineEnding",
+      "value": "
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "_kind": "hashbang",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 54,
+      },
+      "lang": "shell",
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 3,
+        "column": 1,
+        "line": 2,
+        "offset": 54,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 54,
+      },
+      "type": "eoc",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 3,
+        "column": 1,
+        "line": 2,
+        "offset": 54,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 54,
+      },
+      "type": "eoc",
+    },
+  ],
+]
+`;
