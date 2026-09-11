@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": false,
+    "allowJs": false,
+    "checkJs": false,
+    "customConditions": ["docmark-extension-hashbang"],
+    "declarationMap": false,
+    "noEmitOnError": true,
+    "outDir": "dist",
+    "rewriteRelativeImportExtensions": true,
+    "rootDir": "src",
+    "sourceMap": false,
+    "target": "es2024"
+  },
+  "exclude": ["**/__mocks__/**", "**/__tests__/**"],
+  "extends": "./tsconfig.json",
+  "files": [],
+  "include": ["dist/**/*", "src/**/**.mts"]
+}

@@ -1,0 +1,4 @@
+
+
+   // continuation construct did not consume entire line.
+   // start markdown chunk from current point in the stream.

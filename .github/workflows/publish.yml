@@ -1,0 +1,158 @@
+# Publish
+#
+# Cross-publish package to GitHub Package Registry and NPM when a GitHub release is published.
+#
+# References:
+#
+# - https://docs.github.com/actions/learn-github-actions/contexts
+# - https://docs.github.com/actions/learn-github-actions/expressions
+# - https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#release
+# - https://docs.github.com/actions/using-workflows/workflow-commands-for-github-actions
+# - https://docs.github.com/webhooks-and-events/webhooks/webhook-events-and-payloads#release
+# - https://docs.npmjs.com/trusted-publishers
+# - https://github.com/actions/checkout
+# - https://github.com/actions/setup-node
+# - https://github.com/actions/setup-node/blob/main/docs/advanced-usage.md#yarn2-configuration
+# - https://github.com/flex-development/gh-release-url-action
+# - https://github.com/flex-development/ghr-url-action
+# - https://github.com/flex-development/npm-url-action
+# - https://github.com/hmarr/debug-action
+# - https://github.com/kaisugi/action-regex-match
+# - https://regex101.com/r/3gxjZI
+
+---
+name: publish
+on:
+  release:
+    types:
+      - published
+concurrency:
+  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.ref_name }}
+jobs:
+  preflight:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    outputs:
+      command: ${{ steps.command.outputs.result }}
+      package: ${{ steps.package.outputs.result }}
+      version: ${{ steps.version.outputs.manifest }}
+    steps:
+      - id: debug
+        name: Print environment variables and event payload
+        uses: hmarr/debug-action@v3.0.0
+      - id: checkout
+        name: Checkout ${{ github.ref_name }}
+        uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+          ref: ${{ github.ref }}
+      - id: package
+        name: Get package name
+        uses: flex-development/jq-action@1.0.0
+        with:
+          data: package.json
+          filter: .name
+      - id: version
+        name: Get release version
+        uses: flex-development/manver-action@1.1.0
+      - id: artifact
+        name: Get release artifact download url
+        uses: flex-development/gh-release-url-action@2.1.0
+        with:
+          artifact: |
+            ${{ format('@{0}-{1}-{2}.tgz', github.repository_owner, github.event.repository.name, steps.version.outputs.manifest) }}
+          version: ${{ steps.version.outputs.manifest }}
+      - id: dist
+        name: Get dist tag
+        uses: flex-development/dist-tag-action@1.1.2
+        with:
+          target: ${{ steps.version.outputs.manifest }}
+      - id: command
+        name: Get publish command
+        run: |
+          echo "result=npm publish --provenance ${{ steps.artifact.outputs.artifact }} ${{ steps.dist.outputs.flag }}" >>$GITHUB_OUTPUT
+  gpr:
+    needs: preflight
+    permissions:
+      contents: read
+      id-token: write
+      packages: write
+    runs-on: ubuntu-latest
+    environment:
+      name: gpr
+      url: ${{ steps.environment.outputs.url }}
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - id: environment
+        name: Get environment url
+        uses: flex-development/ghr-url-action@1.1.0
+      - id: checkout
+        name: Checkout ${{ github.ref_name }}
+        uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+          ref: ${{ github.ref }}
+      - id: npmrc
+        name: Setup .npmrc file
+        uses: actions/setup-node@v7.0.0
+        with:
+          node-version-file: .nvmrc
+          registry-url: https://npm.pkg.github.com
+          scope: ${{ github.repository_owner }}
+      - id: npmrc-print
+        name: Print contents of .npmrc file
+        run: cat $NPM_CONFIG_USERCONFIG
+      - id: publish
+        name: Publish package
+        run: ${{ needs.preflight.outputs.command }}
+      - id: latest
+        name: Set latest version
+        run: |
+          release=${{ needs.preflight.outputs.package }}@${{ needs.preflight.outputs.version }}
+          npm dist-tag add $release latest
+  npm:
+    needs: preflight
+    permissions:
+      contents: read
+      id-token: write
+      packages: write
+    runs-on: ubuntu-latest
+    environment:
+      name: npm
+      url: ${{ steps.environment.outputs.url }}
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - id: environment
+        name: Get environment url
+        uses: flex-development/npm-url-action@1.0.0
+        with:
+          scope: ${{ github.repository_owner }}
+          version: ${{ needs.preflight.outputs.version }}
+      - id: checkout
+        name: Checkout ${{ github.ref_name }}
+        uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+          ref: ${{ github.ref }}
+      - id: npmrc
+        name: Setup .npmrc file
+        uses: actions/setup-node@v7.0.0
+        with:
+          node-version-file: .nvmrc
+          registry-url: https://registry.npmjs.org
+          scope: ${{ github.repository_owner }}
+      - id: npmrc-print
+        name: Print contents of .npmrc file
+        run: cat $NPM_CONFIG_USERCONFIG
+      - id: publish
+        name: Publish package
+        run: ${{ needs.preflight.outputs.command }}
+      - id: latest
+        name: Set latest version
+        run: |
+          release=${{ needs.preflight.outputs.package }}@${{ needs.preflight.outputs.version }}
+          npm dist-tag add $release latest

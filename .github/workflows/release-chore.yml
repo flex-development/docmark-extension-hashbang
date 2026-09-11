@@ -1,0 +1,258 @@
+# Release Chore
+#
+# Execute branch, version bump, changelog, and pull request operations on release chore commit.
+#
+# References:
+#
+# - https://cli.github.com/manual/gh_pr_create
+# - https://docs.github.com/actions/learn-github-actions/contexts
+# - https://docs.github.com/actions/learn-github-actions/expressions
+# - https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#push
+# - https://docs.github.com/actions/using-workflows/using-github-cli-in-workflows
+# - https://docs.github.com/actions/using-workflows/workflow-commands-for-github-actions
+# - https://docs.github.com/webhooks-and-events/webhooks/webhook-events-and-payloads#push
+# - https://github.com/actions/checkout
+# - https://github.com/actions/create-github-app-token
+# - https://github.com/actions/github-script
+# - https://github.com/actions/setup-node
+# - https://github.com/actions/setup-node/blob/main/docs/advanced-usage.md#yarn2-configuration
+# - https://github.com/flex-development/gh-commit
+# - https://github.com/flex-development/gh-release-url-action
+# - https://github.com/flex-development/grease
+# - https://github.com/hmarr/debug-action
+# - https://github.com/kaisugi/action-regex-match
+# - https://regex101.com/r/OwpOr2
+# - https://yarnpkg.com/cli/version/apply
+
+---
+name: release-chore
+on:
+  push:
+    branches:
+      - main
+concurrency:
+  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.ref }}
+jobs:
+  preflight:
+    if: startsWith(github.event.head_commit.message, 'release(chore):')
+    runs-on: ubuntu-latest
+    outputs:
+      branch: ${{ steps.branch.outputs.result }}
+      message: ${{ steps.message.outputs.result }}
+      version: ${{ steps.metadata.outputs.group2 }}
+    steps:
+      - id: debug
+        name: Print environment variables and event payload
+        uses: hmarr/debug-action@v3.0.0
+      - id: fail-actor
+        if: contains(vars.MAINTAINERS, github.actor) == false
+        name: Fail on unauthorized actor
+        run: |
+          echo '**Unauthorized actor: ${{ github.actor }}**' >>$GITHUB_STEP_SUMMARY
+          exit 1
+      - id: checkout
+        name: Checkout ${{ github.ref_name }}
+        uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+          ref: ${{ github.ref }}
+      - id: diff-tree
+        name: Get diff tree
+        run: echo "result=$(git diff-tree --name-only -r ${{ github.sha }})" >>$GITHUB_OUTPUT
+      - id: fail-diff-tree
+        if: steps.diff-tree.outputs.result != ''
+        name: Fail on invalid diff tree
+        run: |
+          ERR='**Invalid diff tree**
+          ```sh
+          ${{ steps.diff-tree.outputs.result }}
+          ```'
+          echo "$ERR" >>$GITHUB_STEP_SUMMARY
+          exit 1
+      - id: metadata
+        name: Extract release metadata
+        uses: kaisugi/action-regex-match@v1.0.2
+        with:
+          flags: u
+          regex: ${{ vars.RELEASE_CHORE_REGEX }}
+          text: ${{ github.event.head_commit.message }}
+      - id: fail-metadata
+        if: steps.metadata.outputs.match == ''
+        name: Fail on invalid head commit message
+        run: |
+          ERR='**Invalid release chore commit message**
+          ```sh
+          ${{ github.event.head_commit.message }}
+          ```
+          Message must match [`${{ vars.RELEASE_CHORE_REGEX }}`](https://regex101.com/r/OwpOr2)'
+          echo "$ERR" >>$GITHUB_STEP_SUMMARY
+          exit 1
+      - id: environment
+        name: Get release tag
+        uses: flex-development/gh-release-url-action@2.1.0
+        with:
+          version: ${{ steps.metadata.outputs.group2 }}
+      - id: message
+        name: Get release message
+        run: 'echo "result=release: ${{ steps.environment.outputs.tag }}" >>$GITHUB_OUTPUT'
+      - id: branch
+        name: Get release branch name
+        run: echo "result=release/${{ steps.metadata.outputs.group2 }}" >>$GITHUB_OUTPUT
+  branch:
+    needs: preflight
+    runs-on: ubuntu-latest
+    steps:
+      - id: bot-token
+        name: Get bot token
+        uses: actions/create-github-app-token@v3.2.0
+        with:
+          client-id: ${{ secrets.BOT_APP_ID }}
+          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+      - id: checkout
+        name: Checkout ${{ github.ref_name }}
+        uses: actions/checkout@v7.0.1
+        with:
+          ref: ${{ github.ref }}
+          token: ${{ steps.bot-token.outputs.token }}
+      - id: branch
+        name: Create and push branch ${{ needs.preflight.outputs.branch }}
+        run: |
+          git branch ${{ needs.preflight.outputs.branch }}
+          git push origin --no-verify ${{ needs.preflight.outputs.branch }}
+  prepare:
+    needs:
+      - branch
+      - preflight
+    runs-on: ubuntu-latest
+    steps:
+      - id: bot-token
+        name: Get bot token
+        uses: actions/create-github-app-token@v3.2.0
+        with:
+          client-id: ${{ secrets.BOT_APP_ID }}
+          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+      - id: checkout
+        name: Checkout ${{ needs.preflight.outputs.branch }}
+        uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+          ref: ${{ needs.preflight.outputs.branch }}
+          token: ${{ steps.bot-token.outputs.token }}
+      - id: node
+        name: Setup Node.js
+        uses: actions/setup-node@v7.0.0
+        with:
+          cache: yarn
+          cache-dependency-path: yarn.lock
+          node-version-file: .nvmrc
+      - id: yarn
+        name: Install dependencies
+        env:
+          HUSKY: 0
+        run: yarn --immutable
+      - id: local-binaries
+        name: Add local binaries to $PATH
+        run: echo "${{ github.workspace }}/node_modules/.bin" >> ${{ github.path }}
+      - id: versions
+        name: Upload version manifest
+        uses: actions/upload-artifact@v7.0.1
+        with:
+          name: ${{ needs.preflight.outputs.version }}.yml
+          path: .yarn/versions/*.yml
+      - id: bump
+        name: Bump manifest version to ${{ needs.preflight.outputs.version }}
+        run: yarn version apply --all --force
+      - id: changeset-base-refs
+        name: Update `changesetBaseRefs` in .yarnrc.yml
+        run: |
+          set -e
+          yq '.changesetBaseRefs="${{ needs.preflight.outputs.version }}"' -i .yarnrc.yml
+      - id: changelog
+        name: Add CHANGELOG entry for ${{ needs.preflight.outputs.version }}
+        env:
+          TZ: ${{ vars.TZ }}
+        run: |
+          set -e
+          echo "$(grease changelog)" >>$GITHUB_STEP_SUMMARY # add changelog entry to summary.
+          grease changelog -sw # write changelog entry.
+      - id: commit
+        name: Commit and push release preparation
+        uses: flex-development/gh-commit@1.0.0
+        with:
+          message: ${{ needs.preflight.outputs.message }}
+          ref: ${{ needs.preflight.outputs.branch }}
+          token: ${{ steps.bot-token.outputs.token }}
+          trailers: 'Signed-off-by: ${{ vars.BOT_NAME }} <${{ vars.BOT_EMAIL }}>'
+      - id: commit-url
+        name: Print commit url
+        run: |
+          echo ${{ format('{0}/{1}/commit/{2}', github.server_url, github.repository, steps.commit.outputs.sha) }}
+  pr:
+    needs:
+      - branch
+      - preflight
+      - prepare
+    runs-on: ubuntu-latest
+    steps:
+      - id: bot-token
+        name: Get bot token
+        uses: actions/create-github-app-token@v3.2.0
+        with:
+          client-id: ${{ secrets.BOT_APP_ID }}
+          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+      - id: checkout
+        name: Checkout ${{ needs.preflight.outputs.branch }}
+        uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+          ref: ${{ needs.preflight.outputs.branch }}
+          token: ${{ steps.bot-token.outputs.token }}
+      - id: pr
+        name: Create pull request
+        env:
+          GITHUB_TOKEN: ${{ steps.bot-token.outputs.token }}
+        run: |
+          gh pr create --title='${{ needs.preflight.outputs.message }}' --label=scope:release --assignee=${{ github.actor }} --reviewer=${{ github.actor }} --body='## Description
+
+          <!-- A clear and concise description of your changes. -->
+
+          - bumped manifest version to `${{ needs.preflight.outputs.version }}`
+          - bumped `changesetBaseRefs` to `${{ needs.preflight.outputs.version }}`
+          - added `CHANGELOG` entry for `${{ needs.preflight.outputs.version }}`
+
+          ## Linked issues
+
+          <!--
+          A list of linked issues and/or pull requests.
+
+          - <closes|fixes|resolves> #<issue-number>
+          - <prereleases|releases> #<pr-number>
+          -->
+
+          N/A
+
+          ## Related documents
+
+          <!-- A list of related documents (e.g. docs, proposals, specs, etc), if any. -->
+
+          N/A
+
+          ## Additional context
+
+          <!--
+          Include additional details here. Be sure to note if any tolerable vulnerabilities or warnings have been introduced.
+          -->
+
+          N/A
+
+          ## Submission checklist
+
+          - [x] self-review performed
+          - [x] tests added and/or updated
+          - [x] documentation added or updated
+          - [x] new, **tolerable** vulnerabilities and/or warnings documented, if any
+          - [x] [pr naming conventions][pr-naming]
+
+          [pr-naming]: ${{ github.server_url }}/${{ github.repository }}/blob/main/CONTRIBUTING.md#pull-request-titles'

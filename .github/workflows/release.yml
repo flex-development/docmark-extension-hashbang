@@ -1,0 +1,154 @@
+# Release
+#
+# Publish a GitHub release after a release is merged.
+#
+# References:
+#
+# - https://cli.github.com/manual/gh_release_create
+# - https://docs.github.com/actions/learn-github-actions/contexts
+# - https://docs.github.com/actions/learn-github-actions/expressions
+# - https://docs.github.com/actions/reference/workflows-and-actions/workflow-commands
+# - https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#push
+# - https://docs.github.com/actions/using-workflows/using-github-cli-in-workflows
+# - https://docs.github.com/actions/using-workflows/workflow-commands-for-github-actions
+# - https://docs.github.com/webhooks-and-events/webhooks/webhook-events-and-payloads#push
+# - https://git-scm.com/book/en/v2/Git-Basics-Tagging
+# - https://github.com/actions/checkout
+# - https://github.com/crazy-max/ghaction-import-gpg
+# - https://github.com/flex-development/dist-tag-action
+# - https://github.com/flex-development/gh-release-url-action
+# - https://github.com/flex-development/grease
+# - https://github.com/flex-development/manver-action
+# - https://github.com/hmarr/debug-action
+# - https://github.com/kaisugi/action-regex-match
+# - https://regex101.com/r/wu576x
+# - https://yarnpkg.com/cli/pack
+
+---
+name: release
+on:
+  push:
+    branches:
+      - main
+jobs:
+  preflight:
+    if: ${{ startsWith(github.event.head_commit.message, 'release:') }}
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    outputs:
+      environment: ${{ steps.environment.outputs.url }}
+      prerelease: ${{ steps.dist.outputs.prerelease }}
+      version: ${{ steps.version.outputs.manifest }}
+    steps:
+      - id: debug
+        name: Print environment variables and event payload
+        uses: hmarr/debug-action@v3.0.0
+      - id: fail-actor
+        if: contains(vars.MAINTAINERS, github.actor) == false
+        name: Fail on unauthorized actor
+        run: |
+          echo '**Unauthorized actor: ${{ github.actor }}**' >>$GITHUB_STEP_SUMMARY
+          exit 1
+      - id: metadata
+        name: Check head commit message
+        uses: kaisugi/action-regex-match@v1.0.2
+        with:
+          flags: u
+          regex: ${{ vars.RELEASE_MERGED_REGEX }}
+          text: ${{ github.event.head_commit.message }}
+      - id: fail-metadata
+        if: steps.metadata.outputs.match == ''
+        name: Fail on invalid release merge message
+        run: |
+          err='**Invalid release merge message**
+          ```sh
+          ${{ github.event.head_commit.message }}
+          ```
+          Message must match [`${{ vars.RELEASE_MERGED_REGEX }}`](https://regex101.com/r/wu576x)'
+          echo "$err" >>$GITHUB_STEP_SUMMARY
+          exit 1
+      - id: checkout
+        name: Checkout ${{ github.ref_name }}
+        uses: actions/checkout@v7.0.1
+        with:
+          ref: ${{ github.sha }}
+      - id: version
+        name: Get release version
+        uses: flex-development/manver-action@1.1.0
+      - id: environment
+        name: Get release url
+        uses: flex-development/gh-release-url-action@2.1.0
+        with:
+          version: ${{ steps.version.outputs.tag }}
+      - id: dist
+        name: Get dist tag
+        uses: flex-development/dist-tag-action@1.1.2
+        with:
+          target: ${{ steps.version.outputs.manifest }}
+  publish:
+    needs: preflight
+    runs-on: ubuntu-latest
+    environment:
+      name: release
+      url: ${{ needs.preflight.outputs.environment }}
+    env:
+      GITHUB_TOKEN: ${{ secrets.GH_REPO_TOKEN }}
+      HUSKY: 0
+      NOTES_FILE: RELEASE_NOTES.md
+    steps:
+      - id: checkout
+        name: Checkout ${{ github.ref_name }}
+        uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+          ref: ${{ github.sha }}
+          token: ${{ env.GITHUB_TOKEN }}
+      - id: gpg-import
+        name: Import GPG key
+        uses: crazy-max/ghaction-import-gpg@v7.0.0
+        with:
+          git_config_global: true
+          git_push_gpgsign: false
+          git_tag_gpgsign: true
+          git_user_signingkey: true
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+          trust_level: 5
+      - id: node
+        name: Setup Node.js
+        uses: actions/setup-node@v7.0.0
+        with:
+          cache: yarn
+          cache-dependency-path: yarn.lock
+          node-version-file: .nvmrc
+      - id: dependencies
+        name: Install dependencies
+        run: yarn --immutable
+      - id: local-binaries
+        name: Add local binaries to $PATH
+        run: echo "${{ github.workspace }}/node_modules/.bin" >> ${{ github.path }}
+      - id: build
+        name: Add build metadata to package.json
+        run: yq '.build="${{ github.sha }}"' -i package.json
+      - id: pack
+        name: Pack project
+        run: |
+          mv CHANGELOG.md _CHANGELOG.md
+          yarn pack --out %s-%v.tgz
+          mv _CHANGELOG.md CHANGELOG.md
+      - id: notes
+        name: Generate release notes
+        env:
+          TZ: ${{ vars.TZ }}
+        run: |
+          grease changelog -wo $NOTES_FILE
+          echo "$(cat $NOTES_FILE)" >>$GITHUB_STEP_SUMMARY
+      - id: tag
+        name: Create annotated tag
+        run: 'grease tag -ps -m "release: {tag}" ${{ needs.preflight.outputs.version }}'
+      - id: publish
+        name: Publish release
+        run: |
+          gh release create ${{ needs.preflight.outputs.version }} *.tgz --title=${{ needs.preflight.outputs.version }} --notes-file=${{ env.NOTES_FILE }} --prerelease=${{ needs.preflight.outputs.prerelease }} --verify-tag --discussion-category=releases
