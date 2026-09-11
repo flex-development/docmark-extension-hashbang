@@ -127,7 +127,7 @@ function tokenizeHashbang(
   function startComment(this: void, code: Code): State | undefined {
     assert(code === codes.numberSign, 'expected `codes.numberSign`')
 
-    effects.enter(tt.comment, { _kind: kind.hashbang, lang: self.parser.lang })
+    effects.enter(tt.comment, { kind: kind.hashbang, lang: self.parser.lang })
     effects.enter(tt.commentLinePrefix)
 
     /**
