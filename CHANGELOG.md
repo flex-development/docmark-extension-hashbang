@@ -1,3 +1,26 @@
+## [1.0.0-alpha.6](https://github.com/flex-development/docmark-extension-hashbang/compare/1.0.0-alpha.5...1.0.0-alpha.6) (2026-09-17)
+
+### ⚠ BREAKING CHANGES
+
+- remove construct `name`
+
+### :package: Build
+
+- [[`1c74af7`](https://github.com/flex-development/docmark-extension-hashbang/commit/1c74af7af66d8f07143817edd52f25da684cf4d6)] [fix] externalize `pkg.dependencies`
+- [[`0e5cfe6`](https://github.com/flex-development/docmark-extension-hashbang/commit/0e5cfe6662c6def4530cd618971ff5a053c63dc9)] **deps-dev:** bump cspell from 10.3.1 to 10.3.3
+- [[`54e95f5`](https://github.com/flex-development/docmark-extension-hashbang/commit/54e95f5ec8d592bddba9e231e9e8001b8446bc28)] **deps-dev:** bump eslint from 9.39.4 to 9.39.5
+- [[`c96bb99`](https://github.com/flex-development/docmark-extension-hashbang/commit/c96bb99a1a76db375782d5e14a4b7649461ac268)] **deps-dev:** bump rollup from 4.63.2 to 4.63.3
+- [[`c242d99`](https://github.com/flex-development/docmark-extension-hashbang/commit/c242d99ddab3981c4f0ec3c7b2a4e91fdc4ad5db)] **deps-dev:** bump the vitest group with 3 updates
+- [[`b0c5f9f`](https://github.com/flex-development/docmark-extension-hashbang/commit/b0c5f9fc02bbd77551cf201a20b3905e0f871883)] **deps:** bump the docmark group with 5 updates
+
+### :robot: Continuous Integration
+
+- [[`d6b071b`](https://github.com/flex-development/docmark-extension-hashbang/commit/d6b071b5885095131ee38ec979cdba8619500c8d)] **workflows:** [`ci`] continue on bun setup failure
+
+### :mechanical_arm: Refactors
+
+- [[`fd62956`](https://github.com/flex-development/docmark-extension-hashbang/commit/fd62956fd49d05e78b564bdde04cf335a6f6c763)] remove construct `name`
+
 ## [1.0.0-alpha.5](https://github.com/flex-development/docmark-extension-hashbang/compare/1.0.0-alpha.4...1.0.0-alpha.5) (2026-09-16)
 
 ### :package: Build
@@ -38,6 +61,7 @@
 ### :house_with_garden: Housekeeping
 
 - [[`2387614`](https://github.com/flex-development/docmark-extension-hashbang/commit/238761467c034b1c0510e4063162d68835eb2a1d)] initial commit
+
 
 
 
