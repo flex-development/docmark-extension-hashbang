@@ -1,7 +1,7 @@
 {
   "name": "@flex-development/docmark-extension-hashbang",
   "description": "docmark extension to support hashbang comment syntax",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.5",
   "keywords": [
     "bash",
     "comment",
