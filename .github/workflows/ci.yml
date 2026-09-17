@@ -353,9 +353,11 @@ jobs:
       - id: bun
         name: Setup Bun (${{ matrix.bun-version }})
         uses: oven-sh/setup-bun@v2.2.0
+        continue-on-error: true
         with:
           bun-version: ${{ matrix.bun-version }}
       - id: restore-dep-cache
+        if: ${{ !cancelled() }}
         name: Restore dependencies cache
         uses: actions/cache@v6.1.0
         with:
@@ -390,7 +392,6 @@ jobs:
           name: ${{ format('{0}.bun-{1}.lcov.info', env.SHA, matrix.bun-version) }}
           path: ./coverage/lcov.info
       - id: codecov-results
-        if: ${{ !cancelled() }}
         name: Upload test results to Codecov
         uses: codecov/codecov-action@v7.0.0
         with:
