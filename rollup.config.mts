@@ -58,7 +58,7 @@ export default files.map((input: string): RollupOptions => {
   }
 
   return {
-    external: [],
+    external: Object.keys(pkg.dependencies),
     input,
     output: [{ file: input, format: 'esm' }],
     plugins
