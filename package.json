@@ -104,7 +104,7 @@
     "typecheck:ui": "yarn test:ui --typecheck --mode=typecheck"
   },
   "dependencies": {
-    "@flex-development/docmark-factory-markers": "1.0.0-alpha.9",
+    "@flex-development/docmark-factory-markers": "1.0.0-alpha.10",
     "@flex-development/docmark-factory-space": "1.0.0-alpha.10",
     "@flex-development/docmark-grammar": "1.0.0-alpha.10",
     "@flex-development/docmark-util-symbol": "1.0.0-alpha.6",
@@ -142,7 +142,6 @@
     "convert-hrtime": "5.0.0",
     "cross-env": "10.1.0",
     "cspell": "10.3.1",
-    "devlop": "1.1.0",
     "dprint": "0.57.4",
     "editorconfig": "3.0.2",
     "eslint": "9.39.4",
