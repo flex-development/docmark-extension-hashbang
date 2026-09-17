@@ -1,12 +1,11 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`unit:comment > should be named comment construct 1`] = `
+exports[`unit:comment > should be comment construct 1`] = `
 {
   "continuation": {
     "tokenize": [Function tokenizeHashbangContinuation],
   },
   "exit": [Function exitHashbang],
-  "name": "comment:hashbang",
   "previous": [Function previousHashbang],
   "tokenize": [Function tokenizeHashbang],
 }

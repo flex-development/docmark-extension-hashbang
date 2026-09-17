@@ -19,7 +19,6 @@ import type {
   Code,
   ContinuableConstruct,
   Effects,
-  NamedConstruct,
   State,
   TokenizeContext
 } from '@flex-development/docmark-util-types'
@@ -36,12 +35,13 @@ import { ok as assert } from 'devlop'
  *
  * This construct is expected to run at the `source` content level.
  *
- * @const {ContinuableConstruct & NamedConstruct} comment
+ * @see {@linkcode ContinuableConstruct}
+ *
+ * @const {ContinuableConstruct} comment
  */
-const comment: ContinuableConstruct & NamedConstruct = {
+const comment: ContinuableConstruct = {
   continuation: { tokenize: tokenizeHashbangContinuation },
   exit: exitHashbang,
-  name: `${tt.comment}:${kind.hashbang}`,
   previous: previousHashbang,
   tokenize: tokenizeHashbang
 }
@@ -58,8 +58,6 @@ export default comment
  * @return {undefined}
  */
 function exitHashbang(this: TokenizeContext, effects: Effects): undefined {
-  assert(this.parser.constructs.disable.null, 'expected `disable.null`')
-  this.parser.constructs.disable.null.push(comment.name)
   return void effects.exit(tt.comment)
 }
 

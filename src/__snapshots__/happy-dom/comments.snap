@@ -8,7 +8,6 @@ exports[`unit:comments > should be extension 1`] = `
         "tokenize": [Function tokenizeHashbangContinuation],
       },
       "exit": [Function exitHashbang],
-      "name": "comment:hashbang",
       "previous": [Function previousHashbang],
       "tokenize": [Function tokenizeHashbang],
     },
