@@ -6,12 +6,11 @@
 import snapshot from '#tests/utils/snapshot-events'
 import { parse, postprocess, preprocess } from '@flex-development/docmark'
 import testSubject from '@flex-development/docmark-extension-hashbang'
-import { lang, tt } from '@flex-development/docmark-util-symbol'
+import { tt } from '@flex-development/docmark-util-symbol'
 import type {
   Chunk,
   FileLike,
-  ParseOptions,
-  TokenizeContext
+  ParseOptions
 } from '@flex-development/docmark-util-types'
 import pathe from '@flex-development/pathe'
 import { readSync as read } from 'to-vfile'
@@ -23,22 +22,7 @@ describe('e2e:comments', () => {
 
   beforeAll(() => {
     directory = '__fixtures__'
-
-    options = {
-      extensions: [testSubject],
-
-      /**
-       * @this {void}
-       *
-       * @param {TokenizeContext} context
-       *  The tokenization context
-       * @return {undefined}
-       */
-      finalizeContext(this: void, context: TokenizeContext): undefined {
-        context.parser.lang = lang.shell
-        return void context
-      }
-    }
+    options = { extensions: [testSubject] }
   })
 
   it.each<[path: string]>([

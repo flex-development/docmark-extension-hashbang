@@ -13,7 +13,6 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/01.txt",und
         "offset": 2,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -159,7 +158,6 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/01.txt",und
         "offset": 2,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -226,7 +224,6 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/02.txt",und
         "offset": 3,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -416,7 +413,6 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/02.txt",und
         "offset": 3,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -483,7 +479,6 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/03.txt",und
         "offset": 3,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -671,7 +666,6 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/03.txt",und
         "offset": 3,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -738,7 +732,6 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/04.txt",und
         "offset": 4,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -970,7 +963,6 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/04.txt",und
         "offset": 4,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -1037,7 +1029,6 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/01.txt",undef
         "offset": 10,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -1269,7 +1260,6 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/01.txt",undef
         "offset": 10,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -1336,7 +1326,6 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/02.txt",undef
         "offset": 16,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -1608,7 +1597,6 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/02.txt",undef
         "offset": 16,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -1675,7 +1663,6 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/03.txt",undef
         "offset": 13,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -1907,7 +1894,6 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/03.txt",undef
         "offset": 13,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -1974,7 +1960,6 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/04.txt",undef
         "offset": 15,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -2250,7 +2235,6 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/04.txt",undef
         "offset": 15,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -2317,7 +2301,6 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/01.txt",
         "offset": 17,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -2673,7 +2656,6 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/01.txt",
         "offset": 17,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -2740,7 +2722,6 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/02.txt",
         "offset": 20,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -3056,7 +3037,6 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/02.txt",
         "offset": 20,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -3123,7 +3103,6 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/03.txt",
         "offset": 43,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -3523,7 +3502,6 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/03.txt",
         "offset": 43,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -3590,7 +3568,6 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/04.txt",
         "offset": 54,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
@@ -4034,7 +4011,6 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/04.txt",
         "offset": 54,
       },
       "kind": "hashbang",
-      "lang": "shell",
       "start": {
         "_bufferIndex": 0,
         "_index": 0,
