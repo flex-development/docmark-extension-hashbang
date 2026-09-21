@@ -104,11 +104,11 @@
     "typecheck:ui": "yarn test:ui --typecheck --mode=typecheck"
   },
   "dependencies": {
-    "@flex-development/docmark-factory-markers": "1.0.0-alpha.12",
-    "@flex-development/docmark-factory-space": "1.0.0-alpha.12",
-    "@flex-development/docmark-grammar": "1.0.0-alpha.12",
+    "@flex-development/docmark-factory-markers": "1.0.0-alpha.14",
+    "@flex-development/docmark-factory-space": "1.0.0-alpha.14",
+    "@flex-development/docmark-grammar": "1.0.0-alpha.14",
     "@flex-development/docmark-util-symbol": "1.0.0-alpha.8",
-    "@flex-development/docmark-util-types": "1.0.0-alpha.12",
+    "@flex-development/docmark-util-types": "1.0.0-alpha.14",
     "@flex-development/mark-util-character": "1.1.0",
     "devlop": "1.1.0"
   },
@@ -119,7 +119,7 @@
     "@commitlint/types": "21.2.0",
     "@edge-runtime/vm": "5.0.0",
     "@flex-development/commitlint-config": "1.0.1",
-    "@flex-development/docmark": "1.0.0-alpha.12",
+    "@flex-development/docmark": "1.0.0-alpha.14",
     "@flex-development/eslint-config": "1.1.1",
     "@flex-development/export-regex": "2.0.0",
     "@flex-development/grease": "3.0.0-alpha.9",
