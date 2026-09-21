@@ -1,3 +1,9 @@
+## [1.0.0-alpha.8](https://github.com/flex-development/docmark-extension-hashbang/compare/1.0.0-alpha.7...1.0.0-alpha.8) (2026-09-20)
+
+### :package: Build
+
+- [[`fca8af9`](https://github.com/flex-development/docmark-extension-hashbang/commit/fca8af9e788dea5f33c5be94408d90e9ceef0113)] **deps:** bump the docmark group with 4 updates
+
 ## [1.0.0-alpha.7](https://github.com/flex-development/docmark-extension-hashbang/compare/1.0.0-alpha.6...1.0.0-alpha.7) (2026-09-18)
 
 ### :package: Build
@@ -71,6 +77,7 @@
 ### :house_with_garden: Housekeeping
 
 - [[`2387614`](https://github.com/flex-development/docmark-extension-hashbang/commit/238761467c034b1c0510e4063162d68835eb2a1d)] initial commit
+
 
 
 
