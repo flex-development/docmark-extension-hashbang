@@ -3,7 +3,7 @@
  * @module docmark-extension-hashbang/comments
  */
 
-import { codes } from '@flex-development/docmark-util-symbol'
+import { codes, constants } from '@flex-development/docmark-util-symbol'
 import type { NormalizedExtension } from '@flex-development/docmark-util-types'
 import comment from './comment.mts'
 
@@ -15,7 +15,7 @@ import comment from './comment.mts'
  * @const {NormalizedExtension} comments
  */
 const comments: NormalizedExtension = {
-  source: { [codes.numberSign]: comment }
+  [constants.contentTypeSource]: { [codes.numberSign]: comment }
 }
 
 export default comments

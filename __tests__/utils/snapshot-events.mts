@@ -33,6 +33,7 @@ function snapshotEvents(this: void, events: Event[]): [EventType, Token][] {
       token.type !== tt.codeText &&
       token.type !== tt.comment &&
       token.type !== tt.commentLinePrefix &&
+      token.type !== tt.commentOpener &&
       token.type !== tt.content &&
       token.type !== tt.eoc &&
       token.type !== tt.emphasis &&

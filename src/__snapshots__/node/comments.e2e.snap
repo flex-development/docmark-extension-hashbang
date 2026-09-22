@@ -40,7 +40,7 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/01.txt",und
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -144,7 +144,7 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/01.txt",und
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -217,11 +217,11 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/02.txt",und
     "enter",
     {
       "end": {
-        "_bufferIndex": 0,
-        "_index": 2,
-        "column": 1,
-        "line": 2,
-        "offset": 3,
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
       },
       "kind": "hashbang",
       "start": {
@@ -251,7 +251,7 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/02.txt",und
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -355,29 +355,7 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/02.txt",und
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
-    },
-  ],
-  [
-    "enter",
-    {
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 1,
-        "line": 2,
-        "offset": 3,
-      },
-      "start": {
-        "_bufferIndex": -1,
-        "_index": 0,
-        "column": 3,
-        "line": 1,
-        "offset": 2,
-      },
-      "type": "lineEndingBlank",
-      "value": "
-",
+      "type": "commentOpener",
     },
   ],
   [
@@ -386,31 +364,9 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/02.txt",und
       "end": {
         "_bufferIndex": -1,
         "_index": 1,
-        "column": 1,
-        "line": 2,
-        "offset": 3,
-      },
-      "start": {
-        "_bufferIndex": -1,
-        "_index": 0,
         "column": 3,
         "line": 1,
         "offset": 2,
-      },
-      "type": "lineEndingBlank",
-      "value": "
-",
-    },
-  ],
-  [
-    "exit",
-    {
-      "end": {
-        "_bufferIndex": 0,
-        "_index": 2,
-        "column": 1,
-        "line": 2,
-        "offset": 3,
       },
       "kind": "hashbang",
       "start": {
@@ -472,11 +428,11 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/03.txt",und
     "enter",
     {
       "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 4,
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
         "line": 1,
-        "offset": 3,
+        "offset": 2,
       },
       "kind": "hashbang",
       "start": {
@@ -506,7 +462,7 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/03.txt",und
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -610,60 +566,18 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/03.txt",und
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
-    },
-  ],
-  [
-    "enter",
-    {
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 4,
-        "line": 1,
-        "offset": 3,
-      },
-      "start": {
-        "_bufferIndex": 0,
-        "_index": 0,
-        "column": 3,
-        "line": 1,
-        "offset": 2,
-      },
-      "type": "linePrefix",
-      "value": " ",
+      "type": "commentOpener",
     },
   ],
   [
     "exit",
     {
       "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 4,
-        "line": 1,
-        "offset": 3,
-      },
-      "start": {
-        "_bufferIndex": 0,
+        "_bufferIndex": 2,
         "_index": 0,
         "column": 3,
         "line": 1,
         "offset": 2,
-      },
-      "type": "linePrefix",
-      "value": " ",
-    },
-  ],
-  [
-    "exit",
-    {
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 4,
-        "line": 1,
-        "offset": 3,
       },
       "kind": "hashbang",
       "start": {
@@ -725,11 +639,11 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/04.txt",und
     "enter",
     {
       "end": {
-        "_bufferIndex": -1,
-        "_index": 2,
-        "column": 1,
-        "line": 2,
-        "offset": 4,
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
       },
       "kind": "hashbang",
       "start": {
@@ -759,7 +673,7 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/04.txt",und
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -863,104 +777,18 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/04.txt",und
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
-    "enter",
+    "exit",
     {
       "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 4,
-        "line": 1,
-        "offset": 3,
-      },
-      "start": {
-        "_bufferIndex": 0,
+        "_bufferIndex": 2,
         "_index": 0,
         "column": 3,
         "line": 1,
         "offset": 2,
-      },
-      "type": "linePrefix",
-      "value": " ",
-    },
-  ],
-  [
-    "exit",
-    {
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 4,
-        "line": 1,
-        "offset": 3,
-      },
-      "start": {
-        "_bufferIndex": 0,
-        "_index": 0,
-        "column": 3,
-        "line": 1,
-        "offset": 2,
-      },
-      "type": "linePrefix",
-      "value": " ",
-    },
-  ],
-  [
-    "enter",
-    {
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 2,
-        "column": 1,
-        "line": 2,
-        "offset": 4,
-      },
-      "start": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 4,
-        "line": 1,
-        "offset": 3,
-      },
-      "type": "lineEndingBlank",
-      "value": "
-",
-    },
-  ],
-  [
-    "exit",
-    {
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 2,
-        "column": 1,
-        "line": 2,
-        "offset": 4,
-      },
-      "start": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 4,
-        "line": 1,
-        "offset": 3,
-      },
-      "type": "lineEndingBlank",
-      "value": "
-",
-    },
-  ],
-  [
-    "exit",
-    {
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 2,
-        "column": 1,
-        "line": 2,
-        "offset": 4,
       },
       "kind": "hashbang",
       "start": {
@@ -981,14 +809,14 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/04.txt",und
         "_index": 3,
         "column": 1,
         "line": 2,
-        "offset": 4,
+        "offset": 5,
       },
       "start": {
         "_bufferIndex": -1,
         "_index": 2,
         "column": 1,
         "line": 2,
-        "offset": 4,
+        "offset": 5,
       },
       "type": "eoc",
     },
@@ -1001,14 +829,14 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/04.txt",und
         "_index": 3,
         "column": 1,
         "line": 2,
-        "offset": 4,
+        "offset": 5,
       },
       "start": {
         "_bufferIndex": -1,
         "_index": 2,
         "column": 1,
         "line": 2,
-        "offset": 4,
+        "offset": 5,
       },
       "type": "eoc",
     },
@@ -1056,7 +884,7 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/01.txt",undef
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -1160,7 +988,7 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/01.txt",undef
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -1340,11 +1168,11 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/02.txt",undef
     "enter",
     {
       "end": {
-        "_bufferIndex": 3,
+        "_bufferIndex": 2,
         "_index": 0,
-        "column": 4,
+        "column": 3,
         "line": 1,
-        "offset": 3,
+        "offset": 2,
       },
       "start": {
         "_bufferIndex": 0,
@@ -1353,7 +1181,7 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/02.txt",undef
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -1441,56 +1269,14 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/02.txt",undef
     },
   ],
   [
-    "enter",
+    "exit",
     {
       "end": {
-        "_bufferIndex": 3,
-        "_index": 0,
-        "column": 4,
-        "line": 1,
-        "offset": 3,
-      },
-      "start": {
         "_bufferIndex": 2,
         "_index": 0,
         "column": 3,
         "line": 1,
         "offset": 2,
-      },
-      "type": "commentPadding",
-      "value": " ",
-    },
-  ],
-  [
-    "exit",
-    {
-      "end": {
-        "_bufferIndex": 3,
-        "_index": 0,
-        "column": 4,
-        "line": 1,
-        "offset": 3,
-      },
-      "start": {
-        "_bufferIndex": 2,
-        "_index": 0,
-        "column": 3,
-        "line": 1,
-        "offset": 2,
-      },
-      "type": "commentPadding",
-      "value": " ",
-    },
-  ],
-  [
-    "exit",
-    {
-      "end": {
-        "_bufferIndex": 3,
-        "_index": 0,
-        "column": 4,
-        "line": 1,
-        "offset": 3,
       },
       "start": {
         "_bufferIndex": 0,
@@ -1499,7 +1285,7 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/02.txt",undef
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -1513,14 +1299,14 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/02.txt",undef
         "offset": 4,
       },
       "start": {
-        "_bufferIndex": 3,
+        "_bufferIndex": 2,
         "_index": 0,
-        "column": 4,
+        "column": 3,
         "line": 1,
-        "offset": 3,
+        "offset": 2,
       },
-      "type": "whitespace",
-      "value": " ",
+      "type": "commentPadding",
+      "value": "  ",
     },
   ],
   [
@@ -1534,14 +1320,14 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/02.txt",undef
         "offset": 4,
       },
       "start": {
-        "_bufferIndex": 3,
+        "_bufferIndex": 2,
         "_index": 0,
-        "column": 4,
+        "column": 3,
         "line": 1,
-        "offset": 3,
+        "offset": 2,
       },
-      "type": "whitespace",
-      "value": " ",
+      "type": "commentPadding",
+      "value": "  ",
     },
   ],
   [
@@ -1656,11 +1442,11 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/03.txt",undef
     "enter",
     {
       "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 14,
+        "_bufferIndex": 10,
+        "_index": 0,
+        "column": 11,
         "line": 1,
-        "offset": 13,
+        "offset": 10,
       },
       "kind": "hashbang",
       "start": {
@@ -1690,7 +1476,7 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/03.txt",undef
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -1794,7 +1580,7 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/03.txt",undef
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -1840,58 +1626,14 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/03.txt",undef
     },
   ],
   [
-    "enter",
+    "exit",
     {
-      "_trailing": true,
       "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 14,
-        "line": 1,
-        "offset": 13,
-      },
-      "start": {
         "_bufferIndex": 10,
         "_index": 0,
         "column": 11,
         "line": 1,
         "offset": 10,
-      },
-      "type": "whitespace",
-      "value": "   ",
-    },
-  ],
-  [
-    "exit",
-    {
-      "_trailing": true,
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 14,
-        "line": 1,
-        "offset": 13,
-      },
-      "start": {
-        "_bufferIndex": 10,
-        "_index": 0,
-        "column": 11,
-        "line": 1,
-        "offset": 10,
-      },
-      "type": "whitespace",
-      "value": "   ",
-    },
-  ],
-  [
-    "exit",
-    {
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 14,
-        "line": 1,
-        "offset": 13,
       },
       "kind": "hashbang",
       "start": {
@@ -1953,11 +1695,11 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/04.txt",undef
     "enter",
     {
       "end": {
-        "_bufferIndex": -1,
-        "_index": 2,
-        "column": 1,
-        "line": 2,
-        "offset": 15,
+        "_bufferIndex": 11,
+        "_index": 0,
+        "column": 12,
+        "line": 1,
+        "offset": 11,
       },
       "kind": "hashbang",
       "start": {
@@ -1987,7 +1729,7 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/04.txt",undef
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -2091,7 +1833,7 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/04.txt",undef
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -2137,102 +1879,14 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/04.txt",undef
     },
   ],
   [
-    "enter",
+    "exit",
     {
-      "_trailing": true,
       "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 15,
-        "line": 1,
-        "offset": 14,
-      },
-      "start": {
         "_bufferIndex": 11,
         "_index": 0,
         "column": 12,
         "line": 1,
         "offset": 11,
-      },
-      "type": "whitespace",
-      "value": "   ",
-    },
-  ],
-  [
-    "exit",
-    {
-      "_trailing": true,
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 15,
-        "line": 1,
-        "offset": 14,
-      },
-      "start": {
-        "_bufferIndex": 11,
-        "_index": 0,
-        "column": 12,
-        "line": 1,
-        "offset": 11,
-      },
-      "type": "whitespace",
-      "value": "   ",
-    },
-  ],
-  [
-    "enter",
-    {
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 2,
-        "column": 1,
-        "line": 2,
-        "offset": 15,
-      },
-      "start": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 15,
-        "line": 1,
-        "offset": 14,
-      },
-      "type": "lineEnding",
-      "value": "
-",
-    },
-  ],
-  [
-    "exit",
-    {
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 2,
-        "column": 1,
-        "line": 2,
-        "offset": 15,
-      },
-      "start": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 15,
-        "line": 1,
-        "offset": 14,
-      },
-      "type": "lineEnding",
-      "value": "
-",
-    },
-  ],
-  [
-    "exit",
-    {
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 2,
-        "column": 1,
-        "line": 2,
-        "offset": 15,
       },
       "kind": "hashbang",
       "start": {
@@ -2328,7 +1982,7 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/01.txt",
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -2432,7 +2086,7 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/01.txt",
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -2749,7 +2403,7 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/02.txt",
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -2853,7 +2507,7 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/02.txt",
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -3096,11 +2750,11 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/03.txt",
     "enter",
     {
       "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 44,
+        "_bufferIndex": 40,
+        "_index": 0,
+        "column": 41,
         "line": 1,
-        "offset": 43,
+        "offset": 40,
       },
       "kind": "hashbang",
       "start": {
@@ -3130,7 +2784,7 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/03.txt",
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -3234,7 +2888,7 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/03.txt",
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -3448,58 +3102,14 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/03.txt",
     },
   ],
   [
-    "enter",
+    "exit",
     {
-      "_trailing": true,
       "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 44,
-        "line": 1,
-        "offset": 43,
-      },
-      "start": {
         "_bufferIndex": 40,
         "_index": 0,
         "column": 41,
         "line": 1,
         "offset": 40,
-      },
-      "type": "whitespace",
-      "value": "   ",
-    },
-  ],
-  [
-    "exit",
-    {
-      "_trailing": true,
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 44,
-        "line": 1,
-        "offset": 43,
-      },
-      "start": {
-        "_bufferIndex": 40,
-        "_index": 0,
-        "column": 41,
-        "line": 1,
-        "offset": 40,
-      },
-      "type": "whitespace",
-      "value": "   ",
-    },
-  ],
-  [
-    "exit",
-    {
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 44,
-        "line": 1,
-        "offset": 43,
       },
       "kind": "hashbang",
       "start": {
@@ -3561,11 +3171,11 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/04.txt",
     "enter",
     {
       "end": {
-        "_bufferIndex": -1,
-        "_index": 2,
-        "column": 1,
-        "line": 2,
-        "offset": 54,
+        "_bufferIndex": 50,
+        "_index": 0,
+        "column": 51,
+        "line": 1,
+        "offset": 50,
       },
       "kind": "hashbang",
       "start": {
@@ -3595,7 +3205,7 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/04.txt",
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -3699,7 +3309,7 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/04.txt",
         "line": 1,
         "offset": 0,
       },
-      "type": "commentLinePrefix",
+      "type": "commentOpener",
     },
   ],
   [
@@ -3913,102 +3523,14 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/04.txt",
     },
   ],
   [
-    "enter",
+    "exit",
     {
-      "_trailing": true,
       "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 54,
-        "line": 1,
-        "offset": 53,
-      },
-      "start": {
         "_bufferIndex": 50,
         "_index": 0,
         "column": 51,
         "line": 1,
         "offset": 50,
-      },
-      "type": "whitespace",
-      "value": "   ",
-    },
-  ],
-  [
-    "exit",
-    {
-      "_trailing": true,
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 54,
-        "line": 1,
-        "offset": 53,
-      },
-      "start": {
-        "_bufferIndex": 50,
-        "_index": 0,
-        "column": 51,
-        "line": 1,
-        "offset": 50,
-      },
-      "type": "whitespace",
-      "value": "   ",
-    },
-  ],
-  [
-    "enter",
-    {
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 2,
-        "column": 1,
-        "line": 2,
-        "offset": 54,
-      },
-      "start": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 54,
-        "line": 1,
-        "offset": 53,
-      },
-      "type": "lineEnding",
-      "value": "
-",
-    },
-  ],
-  [
-    "exit",
-    {
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 2,
-        "column": 1,
-        "line": 2,
-        "offset": 54,
-      },
-      "start": {
-        "_bufferIndex": -1,
-        "_index": 1,
-        "column": 54,
-        "line": 1,
-        "offset": 53,
-      },
-      "type": "lineEnding",
-      "value": "
-",
-    },
-  ],
-  [
-    "exit",
-    {
-      "end": {
-        "_bufferIndex": -1,
-        "_index": 2,
-        "column": 1,
-        "line": 2,
-        "offset": 54,
       },
       "kind": "hashbang",
       "start": {

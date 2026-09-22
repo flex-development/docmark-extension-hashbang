@@ -3,18 +3,10 @@
  * @module docmark-extension-hashbang/comment
  */
 
-import {
-  factoryMarkers,
-  type Sequence
-} from '@flex-development/docmark-factory-markers'
+import { factoryMarkers } from '@flex-development/docmark-factory-markers'
 import { factorySpace } from '@flex-development/docmark-factory-space'
 import { trailingWhitespace } from '@flex-development/docmark-grammar'
-import {
-  codes,
-  constants,
-  kind,
-  tt
-} from '@flex-development/docmark-util-symbol'
+import { codes, kind, tt } from '@flex-development/docmark-util-symbol'
 import type {
   Code,
   ContinuableConstruct,
@@ -95,6 +87,13 @@ function tokenizeHashbang(
   ok: State,
   nok: State
 ): State {
+  /**
+   * The tokenization context.
+   *
+   * @const {TokenizeContext} self
+   */
+  const self: TokenizeContext = this
+
   return startComment
 
   /**
@@ -119,60 +118,25 @@ function tokenizeHashbang(
     assert(code === codes.numberSign, 'expected `codes.numberSign`')
 
     effects.enter(tt.comment, { kind: kind.hashbang })
-    effects.enter(tt.commentLinePrefix)
+    effects.enter(tt.commentOpener)
 
-    /**
-     * The comment marker sequence.
-     *
-     * @const {Sequence} markers
-     */
-    const markers: Sequence = [codes.numberSign, codes.exclamationMark]
-
-    return factoryMarkers(effects, checkBlankLine, nok, markers)(code)
+    return factoryMarkers(effects, endOpener, nok, [
+      code,
+      codes.exclamationMark
+    ])(code)
   }
 
   /**
-   * Check for a blank line.
+   * After the comment opener.
    *
-   * @this {void}
+   * Any optional padding is captured **outside** the opener.\
+   * A blank line ends the comment before any padding is captured, however.\
    *
-   * @param {Code} code
-   *  The current character code
-   * @return {State | undefined}
-   *  The next state
-   */
-  function checkBlankLine(this: void, code: Code): State | undefined {
-    // delegate to `source` initializer.
-    if (eol(code) || eos(code)) return beforeBlankLine(code)
-
-    // definite non-empty line.
-    if (!whitespace(code)) return endPrefix(code)
-
-    // check for prefixed blank line.
-    // if found, delegate to `source` initializer.
-    // otherwise capture optional comment padding.
-    // note: the `trailingWhitespace` construct is used because the
-    // `blankLine` construct expects the previous code to be the beginning of
-    // stream code or a line ending.
-    return effects.check(
-      trailingWhitespace,
-      beforeBlankLine,
-      factorySpace(
-        effects,
-        endPrefix,
-        tt.commentPadding,
-        constants.commentPaddingSizeMin
-      )
-    )(code)
-  }
-
-  /**
-   * Before a blank logical line.
+   * The interpreter path begins at the first non-whitespace code after
+   * the last comment marker.
    *
-   * The comment line prefix ends immediately before the line ending
-   * or end of stream.
-   *
-   * > 👉 **Note**: `␊` represents a line ending and `␠` represents a space.
+   * > 👉 **Note**: `␊` represents a line ending, `␠` represents a space,
+   * > and `ᴺᵁᴸ` represents end-of-stream.
    *
    * @example
    *  ```markdown
@@ -182,29 +146,27 @@ function tokenizeHashbang(
    *
    * @example
    *  ```markdown
-   *  > |#!␠␠␠␊
+   *  > |#!ᴺᵁᴸ
    *       ^
    *  ```
    *
-   * @this {void}
+   * @example
+   *  ```markdown
+   *  > |#!␠␠␊
+   *       ^
+   *  ```
    *
-   * @param {Code} code
-   *  The current character code
-   * @return {State | undefined}
-   *  The next state
-   */
-  function beforeBlankLine(this: void, code: Code): State | undefined {
-    effects.exit(tt.commentLinePrefix)
-    return ok(code)
-  }
-
-  /**
-   * After comment markers and optional padding.
+   * @example
+   *  ```markdown
+   *  > |#!␠␠ᴺᵁᴸ
+   *       ^
+   *  ```
    *
-   * The comment line prefix ends immediately before the interpreter path
-   * and any arbitrary whitespace.
-   *
-   * > 👉 **Note**: `␊` represents a line ending and `␠` represents a space.
+   * @example
+   *  ```markdown
+   *  > |#!␠␠/usr/bin/env tsx-node␊
+   *       ^
+   *  ```
    *
    * @example
    *  ```markdown
@@ -212,12 +174,6 @@ function tokenizeHashbang(
    *       ^
    *  ```
    *
-   * @example
-   *  ```markdown
-   *  > |#!␠␠/usr/bin/env tsx-node␊
-   *        ^
-   *  ```
-   *
    * @this {void}
    *
    * @param {Code} code
@@ -225,15 +181,30 @@ function tokenizeHashbang(
    * @return {State | undefined}
    *  The next state
    */
-  function endPrefix(this: void, code: Code): State | undefined {
-    assert(!eol(code), 'did not expect line ending')
-    assert(!eos(code), 'did not expect end of stream')
+  function endOpener(this: void, code: Code): State | undefined {
+    // finish the comment opener.
+    effects.exit(tt.commentOpener)
 
-    // finish comment line prefix.
-    effects.exit(tt.commentLinePrefix)
+    // comment terminated by end-of-stream.
+    // delegate to the `source` initializer.
+    if (eos(code)) return ok(code)
 
-    // capture arbitrary whitespace then start interpreter path.
-    return factorySpace(effects, startPath, tt.whitespace)(code)
+    // mark the comment for closure.
+    // blank lines are not hashbang content, so no need to capture line ending.
+    // the `source` initializer will consume it as `opaque` content.
+    if (eol(code)) return closeComment(code)
+
+    // check for a prefixed blank line.
+    // if found, mark the comment for closure.
+    // otherwise capture optional comment padding and start interpreter path.
+    // note: the `trailingWhitespace` construct is used because the `blankLine`
+    // construct expects a previous comment line prefix `exit` event, or
+    // `self.previous` to be the beginning of stream code or a line ending.
+    return effects.check(
+      trailingWhitespace,
+      closeComment,
+      factorySpace(effects, startPath, tt.commentPadding)
+    )(code)
   }
 
   /**
@@ -261,6 +232,10 @@ function tokenizeHashbang(
    *  The next state
    */
   function startPath(this: void, code: Code): State | undefined {
+    assert(!eol(code), 'did not expect line ending')
+    assert(!eos(code), 'did not expect end of stream')
+    assert(!whitespace(code), 'did not expect whitespace')
+
     effects.enter(tt.interpreterPath)
     return insidePath(code)
   }
@@ -268,11 +243,12 @@ function tokenizeHashbang(
   /**
    * Inside the interpreter path.
    *
-   * > 👉 **Note**: `␊` represents a line ending.
+   * > 👉 **Note**: `␊` represents a line ending
+   * > and `ᴺᵁᴸ` represents end-of-stream.
    *
    * @example
    *  ```markdown
-   *  > |#!/usr/bin/bash
+   *  > |#!/usr/bin/bashᴺᵁᴸ
    *       ^^^^^^^^^^^^^
    *  ```
    *
@@ -315,22 +291,22 @@ function tokenizeHashbang(
       return ok
     }
 
-    // try capturing trailing whitespace.
-    // no need to worry about blank lines; they've already been accounted for.
+    // finish interpreter path before whitespace.
     if (whitespace(code)) {
       effects.exit(tt.interpreterPath)
 
-      // try capturing trailing whitespace.
-      // if successful, let `source` initializer take over.
-      // otherwise, capture whitespace and start interpreter argument.
-      return effects.attempt(
+      // try ending comment before trailing whitespace.
+      // no need to worry about blank lines; they've already been accounted for.
+      // if successful, mark the comment for closure.
+      // otherwise, capture whitespace and start first interpreter argument.
+      return effects.check(
         trailingWhitespace,
-        ok,
+        closeComment,
         factorySpace(effects, startArgument, tt.whitespace)
       )(code)
     }
 
-    // add code to interpreter path.
+    // add to interpreter path.
     effects.consume(code)
     return insidePath
   }
@@ -364,7 +340,8 @@ function tokenizeHashbang(
   /**
    * Inside an interpreter argument.
    *
-   * > 👉 **Note**: `␊` represents a line ending.
+   * > 👉 **Note**: `␊` represents a line ending
+   * > and `ᴺᵁᴸ` represents end-of-stream.
    *
    * @example
    *  ```markdown
@@ -374,7 +351,7 @@ function tokenizeHashbang(
    *
    * @example
    *  ```markdown
-   *  > |#!/usr/bin/env node --experimental-strip-types
+   *  > |#!/usr/bin/env node --experimental-strip-typesᴺᵁᴸ
    *                    ^^^^
    *  ```
    *
@@ -405,24 +382,81 @@ function tokenizeHashbang(
       return ok
     }
 
-    // try capturing trailing whitespace.
-    // no need to worry about blank lines; they've already been accounted for.
+    // finish interpreter argument before whitespace.
     if (whitespace(code)) {
       effects.exit(tt.interpreterArgument)
 
-      // try capturing trailing whitespace.
-      // if found, let `source` initializer take over.
+      // try ending comment before trailing whitespace.
+      // no need to worry about blank lines; they've already been accounted for.
+      // if successful, mark the comment for closure.
       // otherwise, capture whitespace and start another interpreter argument.
-      return effects.attempt(
+      return effects.check(
         trailingWhitespace,
-        ok,
+        closeComment,
         factorySpace(effects, startArgument, tt.whitespace)
       )(code)
     }
 
-    // add code to interpreter argument.
+    // add to interpreter argument.
     effects.consume(code)
     return insideArgument
+  }
+
+  /**
+   * Mark the comment for closure.
+   *
+   * Container finalization is deferred to the `source` initializer.
+   *
+   * > 👉 **Note**: `␊` represents a line ending, `␠` represents a space,
+   * > and `ᴺᵁᴸ` represents end-of-stream.
+   *
+   * @example
+   *  ```markdown
+   *  > |#!␠␠ᴺᵁᴸ
+   *       ^
+   *  ```
+   *
+   * @example
+   *  ```markdown
+   *  > |#!␠␠␊
+   *       ^
+   *  ```
+   *
+   * @example
+   *  ```markdown
+   *  > |#!/bin/zsh␠␠␠ᴺᵁᴸ
+   *               ^
+   *  ```
+   *
+   * @example
+   *  ```markdown
+   *  > |#!/bin/bash␠␠␠␊
+   *                ^
+   *  ```
+   *
+   * @example
+   *  ```markdown
+   *  > |#!/usr/bin/env node --conditions=docmark␠␠␠ᴺᵁᴸ
+   *                                             ^
+   *  ```
+   *
+   * @example
+   *  ```markdown
+   *  > |#!/usr/bin/env node --experimental-transform-types␠␠␠␊
+   *                                                       ^
+   *  ```
+   *
+   * @this {void}
+   *
+   * @param {Code} code
+   *  The current character code
+   * @return {State | undefined}
+   *  The next state
+   */
+  function closeComment(this: void, code: Code): State | undefined {
+    assert(self.containerState, 'expected `containerState` inside comment')
+    self.containerState._closeFlow = true
+    return ok(code)
   }
 }
 
