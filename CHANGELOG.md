@@ -1,3 +1,17 @@
+## [1.0.0-alpha.10](https://github.com/flex-development/docmark-extension-hashbang/compare/1.0.0-alpha.9...1.0.0-alpha.10) (2026-09-22)
+
+### ⚠ BREAKING CHANGES
+
+- emit `commentOpener` token
+
+### :robot: Continuous Integration
+
+- [[`61a489a`](https://github.com/flex-development/docmark-extension-hashbang/commit/61a489a5a59688c1a0acfdfd0812fcc5242703c3)] **deps:** Bump codecov/codecov-action from 7.1.0 to 7.1.1 ([#27](https://github.com/flex-development/docmark-extension-hashbang/issues/27))
+
+### :mechanical_arm: Refactors
+
+- [[`5652a24`](https://github.com/flex-development/docmark-extension-hashbang/commit/5652a24bae6b6057ff0433538f2853285196374d)] emit `commentOpener` token
+
 ## [1.0.0-alpha.9](https://github.com/flex-development/docmark-extension-hashbang/compare/1.0.0-alpha.8...1.0.0-alpha.9) (2026-09-21)
 
 ### :package: Build
@@ -83,6 +97,7 @@
 ### :house_with_garden: Housekeeping
 
 - [[`2387614`](https://github.com/flex-development/docmark-extension-hashbang/commit/238761467c034b1c0510e4063162d68835eb2a1d)] initial commit
+
 
 
 
