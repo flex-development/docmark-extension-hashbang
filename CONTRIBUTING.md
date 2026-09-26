@@ -407,7 +407,7 @@ After a release is published, the [`publish`](.github/workflows/publish.yml) wor
 
 [ohmyzsh]: https://github.com/ohmyzsh/ohmyzsh
 
-[qa]: https://github.com/flex-development/docmark/discussions/new?category=q-a
+[qa]: https://github.com/flex-development/docmark-extension-hashbang/discussions/new?category=q-a
 
 [tbd-short-lived-feature-branches]: https://trunkbaseddevelopment.com/styles/#short-lived-feature-branches
 
