@@ -11725,28 +11725,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinybench@npm:^6.0.1":
-  version: 6.1.6
-  resolution: "tinybench@npm:6.1.6"
-  checksum: 10/aa8dd0393d2482f54469f047c156c7efcbdce12ce9d091255bb7e959307ae4ef52076333b0924037f69286c2c5b5a4780f676815689c9ff505e77d8529016d92
-  languageName: node
-  linkType: hard
-
-"tinybench@npm:^6.1.4":
+"tinybench@npm:^6.0.1, tinybench@npm:^6.1.4":
   version: 6.2.0
   resolution: "tinybench@npm:6.2.0"
   checksum: 10/b5b1dceddbd2a8cf3cad814c2b3305ff33656a531e67d87f2a4abbc75b8d4d630c5c3769bfa3a0051f1eacc2dc92fdd9af03f20cd68fcfe93a69bb136dc98bb0
   languageName: node
   linkType: hard
 
-"tinyexec@npm:^1.0.0":
-  version: 1.3.0
-  resolution: "tinyexec@npm:1.3.0"
-  checksum: 10/749a8c5aac2ffe3f04220b8966f414636c6c324d4ae88895dfffb2319db61cf1c01c5d7e8f0fb8ab747389ea0be1f0f80d850a9cce88a9d96cc5ebcb345db018
-  languageName: node
-  linkType: hard
-
-"tinyexec@npm:^1.3.0":
+"tinyexec@npm:^1.0.0, tinyexec@npm:^1.3.0":
   version: 1.3.1
   resolution: "tinyexec@npm:1.3.1"
   checksum: 10/9c7a8ce2633f76c776d9ff663531c7b34d605f41909c2f97a27397e8c12bcaf721dae7680b6683232ffe7a6d465090be9926d5ffd00b5d7be9336a43b45289b1
