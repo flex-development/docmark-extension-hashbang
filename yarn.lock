@@ -1717,12 +1717,12 @@ __metadata:
     "@commitlint/types": "npm:21.2.3"
     "@edge-runtime/vm": "npm:5.0.0"
     "@flex-development/commitlint-config": "npm:1.0.1"
-    "@flex-development/docmark": "npm:1.0.0-alpha.18"
-    "@flex-development/docmark-factory-markers": "npm:1.0.0-alpha.18"
-    "@flex-development/docmark-factory-space": "npm:1.0.0-alpha.18"
-    "@flex-development/docmark-grammar": "npm:1.0.0-alpha.18"
-    "@flex-development/docmark-util-symbol": "npm:1.0.0-alpha.10"
-    "@flex-development/docmark-util-types": "npm:1.0.0-alpha.18"
+    "@flex-development/docmark": "npm:1.0.0-alpha.21"
+    "@flex-development/docmark-factory-markers": "npm:1.0.0-alpha.21"
+    "@flex-development/docmark-factory-space": "npm:1.0.0-alpha.21"
+    "@flex-development/docmark-grammar": "npm:1.0.0-alpha.21"
+    "@flex-development/docmark-util-symbol": "npm:1.0.0-alpha.13"
+    "@flex-development/docmark-util-types": "npm:1.0.0-alpha.21"
     "@flex-development/eslint-config": "npm:1.1.1"
     "@flex-development/export-regex": "npm:2.0.0"
     "@flex-development/grease": "npm:3.0.0-alpha.9"
@@ -1757,7 +1757,7 @@ __metadata:
     node-notifier: "npm:10.0.1"
     remark: "npm:15.0.1"
     remark-cli: "npm:12.0.1"
-    rollup: "npm:4.64.0"
+    rollup: "npm:4.64.10"
     rollup-plugin-cleanup: "npm:3.2.1"
     rollup-plugin-dts: "npm:6.5.1"
     sh-syntax: "npm:0.7.0"
@@ -1773,102 +1773,102 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@flex-development/docmark-factory-markers@npm:1.0.0-alpha.18":
-  version: 1.0.0-alpha.18
-  resolution: "@flex-development/docmark-factory-markers@npm:1.0.0-alpha.18"
+"@flex-development/docmark-factory-markers@npm:1.0.0-alpha.21":
+  version: 1.0.0-alpha.21
+  resolution: "@flex-development/docmark-factory-markers@npm:1.0.0-alpha.21"
   dependencies:
-    "@flex-development/docmark-util-symbol": "npm:1.0.0-alpha.10"
-    "@flex-development/docmark-util-types": "npm:1.0.0-alpha.18"
-    "@flex-development/mark": "npm:1.0.0-alpha.5"
+    "@flex-development/docmark-util-symbol": "npm:1.0.0-alpha.13"
+    "@flex-development/docmark-util-types": "npm:1.0.0-alpha.21"
+    "@flex-development/mark": "npm:1.0.0-alpha.12"
     devlop: "npm:1.1.0"
-  checksum: 10/de85113da7b4855208390fadedf9be14e54bb9525d6c3cfbcc45267ee13a1f19b3e9d80fe2c85c84ef21dd044b793e382b1c5794ac7f370098a19d4e0f41d5bf
+  checksum: 10/4f1a5cd5bbd7145fc6d80be691b98d95dda2ab9b3b7e75bb02e4335071eda47112ef91b99b4741f380edda2e011edefe97c660bdc1dc859ee4cecf2198293337
   languageName: node
   linkType: hard
 
-"@flex-development/docmark-factory-space@npm:1.0.0-alpha.18":
-  version: 1.0.0-alpha.18
-  resolution: "@flex-development/docmark-factory-space@npm:1.0.0-alpha.18"
+"@flex-development/docmark-factory-space@npm:1.0.0-alpha.21":
+  version: 1.0.0-alpha.21
+  resolution: "@flex-development/docmark-factory-space@npm:1.0.0-alpha.21"
   dependencies:
-    "@flex-development/docmark-util-types": "npm:1.0.0-alpha.18"
+    "@flex-development/docmark-util-types": "npm:1.0.0-alpha.21"
     "@flex-development/mark-util-character": "npm:1.1.0"
-    micromark-util-types: "npm:2.0.3"
-  checksum: 10/9e668beb47cbc6abfa1989c283623e2d90592d08c0ee8c6373fef073583a1cc95a5ed22bc840090e206947699ef61eed9ead9a3e0bf46fa922405eb4ef480d8f
+  checksum: 10/04b2843eff58776014788430ec1401da2cc2230729e542046e52b5b2247cbded81664d1a8b868798a0b5fc873f61d0d694b2a38feab1f8844467a044c9e00d58
   languageName: node
   linkType: hard
 
-"@flex-development/docmark-grammar@npm:1.0.0-alpha.18":
-  version: 1.0.0-alpha.18
-  resolution: "@flex-development/docmark-grammar@npm:1.0.0-alpha.18"
+"@flex-development/docmark-grammar@npm:1.0.0-alpha.21":
+  version: 1.0.0-alpha.21
+  resolution: "@flex-development/docmark-grammar@npm:1.0.0-alpha.21"
   dependencies:
-    "@flex-development/docmark-factory-space": "npm:1.0.0-alpha.18"
-    "@flex-development/docmark-util-symbol": "npm:1.0.0-alpha.10"
-    "@flex-development/docmark-util-types": "npm:1.0.0-alpha.18"
+    "@flex-development/docmark-factory-space": "npm:1.0.0-alpha.21"
+    "@flex-development/docmark-util-symbol": "npm:1.0.0-alpha.13"
+    "@flex-development/docmark-util-types": "npm:1.0.0-alpha.21"
     "@flex-development/mark-util-character": "npm:1.1.0"
     devlop: "npm:1.1.0"
-  checksum: 10/cd3481ed30770f25a6390561709a681686abf0fafe5ba1816d510db582629310a78872c909f955dcd68ad0630100c0afd0d929a05b1a099d198a89f7d9dcd04f
+  checksum: 10/9853a4b63fb1db1bf16c5cd86e48cff698367c0be7a2946a1c484852a3d147404ae1bbafc333be0dd71c818dfc80662e1e7a06d745071608e2e60bb864ee7fcd
   languageName: node
   linkType: hard
 
-"@flex-development/docmark-util-combine-extensions@npm:1.0.0-alpha.18":
-  version: 1.0.0-alpha.18
-  resolution: "@flex-development/docmark-util-combine-extensions@npm:1.0.0-alpha.18"
+"@flex-development/docmark-util-combine-extensions@npm:1.0.0-alpha.21":
+  version: 1.0.0-alpha.21
+  resolution: "@flex-development/docmark-util-combine-extensions@npm:1.0.0-alpha.21"
   dependencies:
-    "@flex-development/docmark-util-types": "npm:1.0.0-alpha.18"
+    "@flex-development/docmark-util-types": "npm:1.0.0-alpha.21"
     "@flex-development/mark-util-chunked": "npm:1.0.0"
     devlop: "npm:1.1.0"
-  checksum: 10/935d29ee4ac0e8c67711c162b848ad64a81c29b153a25f32bea0cfbe491dc05981f9d867a31357e3a1460c16f2a879b9382677da5c0aee8f77b0a8ca0934fff0
+  checksum: 10/4d436ebcdb6790ec5b641e75a4516921af41f6511c5a9879ac0179250467da8af013628b77b2289a750126c8f3bd9e209c66a9c7ecfbe91a068094da72e75022
   languageName: node
   linkType: hard
 
-"@flex-development/docmark-util-subtokenize@npm:1.0.0-alpha.18":
-  version: 1.0.0-alpha.18
-  resolution: "@flex-development/docmark-util-subtokenize@npm:1.0.0-alpha.18"
+"@flex-development/docmark-util-subtokenize@npm:1.0.0-alpha.21":
+  version: 1.0.0-alpha.21
+  resolution: "@flex-development/docmark-util-subtokenize@npm:1.0.0-alpha.21"
   dependencies:
-    "@flex-development/docmark-util-symbol": "npm:1.0.0-alpha.10"
-    "@flex-development/docmark-util-types": "npm:1.0.0-alpha.18"
+    "@flex-development/docmark-util-symbol": "npm:1.0.0-alpha.13"
+    "@flex-development/docmark-util-types": "npm:1.0.0-alpha.21"
     "@flex-development/mark-util-chunked": "npm:1.0.0"
     devlop: "npm:1.1.0"
-  checksum: 10/4f8930ebb2663164003f319a1758f538b5034d15e6755d9a35aa93ddfe441a8212517ca71f9277c3606bc4c65c3747fdd56fba9263cdce32d2f8bec581a1c5bd
+  checksum: 10/d2ce2b69b3a6531acb832cbbb9ab3042c9cd75d0cf6346eb4641f41a9e95ba5c60483cb20f9e06cb66adf668ba7dc3f2658778a129f47b4498dcc395881ec7bd
   languageName: node
   linkType: hard
 
-"@flex-development/docmark-util-symbol@npm:1.0.0-alpha.10":
-  version: 1.0.0-alpha.10
-  resolution: "@flex-development/docmark-util-symbol@npm:1.0.0-alpha.10"
-  checksum: 10/38c3d17769654909dcf90193b3bf57e74a30f9c51bb435a46fda214a4f3fa394dea7331e48e4f33d7c7493ef2f9003a9620d2573d06240e921b8b1c02009621d
+"@flex-development/docmark-util-symbol@npm:1.0.0-alpha.13":
+  version: 1.0.0-alpha.13
+  resolution: "@flex-development/docmark-util-symbol@npm:1.0.0-alpha.13"
+  checksum: 10/19817d457faf8066e49246b5221c123b8878833e47735a1714ab3d5ba6af78b46a02b92462effa42ffbae65de7b96b63871cbfd8fea14109f4eaaa350223477d
   languageName: node
   linkType: hard
 
-"@flex-development/docmark-util-types@npm:1.0.0-alpha.18":
-  version: 1.0.0-alpha.18
-  resolution: "@flex-development/docmark-util-types@npm:1.0.0-alpha.18"
+"@flex-development/docmark-util-types@npm:1.0.0-alpha.21":
+  version: 1.0.0-alpha.21
+  resolution: "@flex-development/docmark-util-types@npm:1.0.0-alpha.21"
   dependencies:
-    "@flex-development/mark": "npm:1.0.0-alpha.5"
+    "@flex-development/mark": "npm:1.0.0-alpha.12"
     "@types/debug": "npm:4.1.13"
     micromark-util-types: "npm:2.0.3"
-  checksum: 10/e0dfd868ebe993c2a7df51e18ff936b0c7b9c506184519c1ee235e277abc59819985e6155a1f66aa195825cd9531c005ab1d2e84bb89aeb25271bbaaf7423363
+  checksum: 10/f5d087cbad647e1b5b80a55f475896b28190570bde00db8fc1566dd70118935d4fba3137a5651a21de54def685aa1a91a91bb5d7e1b59d2f2b8562d48375e155
   languageName: node
   linkType: hard
 
-"@flex-development/docmark@npm:1.0.0-alpha.18":
-  version: 1.0.0-alpha.18
-  resolution: "@flex-development/docmark@npm:1.0.0-alpha.18"
+"@flex-development/docmark@npm:1.0.0-alpha.21":
+  version: 1.0.0-alpha.21
+  resolution: "@flex-development/docmark@npm:1.0.0-alpha.21"
   dependencies:
-    "@flex-development/docmark-factory-space": "npm:1.0.0-alpha.18"
-    "@flex-development/docmark-grammar": "npm:1.0.0-alpha.18"
-    "@flex-development/docmark-util-combine-extensions": "npm:1.0.0-alpha.18"
-    "@flex-development/docmark-util-subtokenize": "npm:1.0.0-alpha.18"
-    "@flex-development/docmark-util-symbol": "npm:1.0.0-alpha.10"
-    "@flex-development/docmark-util-types": "npm:1.0.0-alpha.18"
-    "@flex-development/mark": "npm:1.0.0-alpha.5"
+    "@flex-development/docmark-factory-space": "npm:1.0.0-alpha.21"
+    "@flex-development/docmark-grammar": "npm:1.0.0-alpha.21"
+    "@flex-development/docmark-util-combine-extensions": "npm:1.0.0-alpha.21"
+    "@flex-development/docmark-util-subtokenize": "npm:1.0.0-alpha.21"
+    "@flex-development/docmark-util-symbol": "npm:1.0.0-alpha.13"
+    "@flex-development/docmark-util-types": "npm:1.0.0-alpha.21"
+    "@flex-development/mark": "npm:1.0.0-alpha.12"
     "@flex-development/mark-parser": "npm:1.0.0-alpha.20"
     "@flex-development/mark-util-character": "npm:1.1.0"
     "@flex-development/mark-util-chunked": "npm:1.0.0"
     devlop: "npm:1.1.0"
+    micromark: "npm:4.0.3"
     micromark-core-commonmark: "npm:2.0.4"
     micromark-util-subtokenize: "npm:2.1.0"
     micromark-util-types: "npm:2.0.3"
-  checksum: 10/25ace4e783713a27970a2efbb706e2503677c07712e21df671fe6e3c4d4518904fd39012947a06852af61d5f4cfdecf832c30825e3d1757b7da691f8c506b952
+  checksum: 10/b595ad1f444ba8476294b8a56ae7cdb48bc06ee83a9b18e6b0fa26e7aeeffdabd2a07b6e4263fe0a0969d1650bbc4ae32e1fb2d3205f03d68b5dc9d62b28e177
   languageName: node
   linkType: hard
 
@@ -2116,6 +2116,16 @@ __metadata:
     "@flex-development/unist-util-types": "npm:1.6.1"
     "@types/unist": "npm:3.0.3"
   checksum: 10/7329561e42c49429de401b368fdaec235b60d12e85b503ffb6c5facf9cff19201801515ecc470c89fd1b60dc280b4bf5e6c53285dbf92d674bd0d36a53ef1122
+  languageName: node
+  linkType: hard
+
+"@flex-development/mark@npm:1.0.0-alpha.12":
+  version: 1.0.0-alpha.12
+  resolution: "@flex-development/mark@npm:1.0.0-alpha.12"
+  dependencies:
+    "@flex-development/unist-util-types": "npm:1.6.1"
+    "@types/unist": "npm:3.0.3"
+  checksum: 10/c96a84760f6171e29660485b4f719f85add4918c565538c9fc6fe175876469169ebab349f4f7f0dd03649facdb42287c66b8585c0c74fdf53d505688da10402f
   languageName: node
   linkType: hard
 
@@ -3094,177 +3104,177 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/rollup-android-arm-eabi@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-android-arm-eabi@npm:4.64.0"
+"@rollup/rollup-android-arm-eabi@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-android-arm-eabi@npm:4.64.10"
   conditions: os=android & cpu=arm
   languageName: node
   linkType: hard
 
-"@rollup/rollup-android-arm64@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-android-arm64@npm:4.64.0"
+"@rollup/rollup-android-arm64@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-android-arm64@npm:4.64.10"
   conditions: os=android & cpu=arm64
   languageName: node
   linkType: hard
 
-"@rollup/rollup-darwin-arm64@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-darwin-arm64@npm:4.64.0"
+"@rollup/rollup-darwin-arm64@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-darwin-arm64@npm:4.64.10"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@rollup/rollup-darwin-x64@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-darwin-x64@npm:4.64.0"
+"@rollup/rollup-darwin-x64@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-darwin-x64@npm:4.64.10"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@rollup/rollup-freebsd-arm64@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-freebsd-arm64@npm:4.64.0"
+"@rollup/rollup-freebsd-arm64@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-freebsd-arm64@npm:4.64.10"
   conditions: os=freebsd & cpu=arm64
   languageName: node
   linkType: hard
 
-"@rollup/rollup-freebsd-x64@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-freebsd-x64@npm:4.64.0"
+"@rollup/rollup-freebsd-x64@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-freebsd-x64@npm:4.64.10"
   conditions: os=freebsd & cpu=x64
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-arm-gnueabihf@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-linux-arm-gnueabihf@npm:4.64.0"
+"@rollup/rollup-linux-arm-gnueabihf@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-linux-arm-gnueabihf@npm:4.64.10"
   conditions: os=linux & cpu=arm & libc=glibc
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-arm-musleabihf@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-linux-arm-musleabihf@npm:4.64.0"
+"@rollup/rollup-linux-arm-musleabihf@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-linux-arm-musleabihf@npm:4.64.10"
   conditions: os=linux & cpu=arm & libc=musl
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-arm64-gnu@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-linux-arm64-gnu@npm:4.64.0"
+"@rollup/rollup-linux-arm64-gnu@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-linux-arm64-gnu@npm:4.64.10"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-arm64-musl@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-linux-arm64-musl@npm:4.64.0"
+"@rollup/rollup-linux-arm64-musl@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-linux-arm64-musl@npm:4.64.10"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-loong64-gnu@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-linux-loong64-gnu@npm:4.64.0"
+"@rollup/rollup-linux-loong64-gnu@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-linux-loong64-gnu@npm:4.64.10"
   conditions: os=linux & cpu=loong64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-loong64-musl@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-linux-loong64-musl@npm:4.64.0"
+"@rollup/rollup-linux-loong64-musl@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-linux-loong64-musl@npm:4.64.10"
   conditions: os=linux & cpu=loong64 & libc=musl
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-ppc64-gnu@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-linux-ppc64-gnu@npm:4.64.0"
+"@rollup/rollup-linux-ppc64-gnu@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-linux-ppc64-gnu@npm:4.64.10"
   conditions: os=linux & cpu=ppc64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-ppc64-musl@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-linux-ppc64-musl@npm:4.64.0"
+"@rollup/rollup-linux-ppc64-musl@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-linux-ppc64-musl@npm:4.64.10"
   conditions: os=linux & cpu=ppc64 & libc=musl
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-riscv64-gnu@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-linux-riscv64-gnu@npm:4.64.0"
+"@rollup/rollup-linux-riscv64-gnu@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-linux-riscv64-gnu@npm:4.64.10"
   conditions: os=linux & cpu=riscv64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-riscv64-musl@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-linux-riscv64-musl@npm:4.64.0"
+"@rollup/rollup-linux-riscv64-musl@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-linux-riscv64-musl@npm:4.64.10"
   conditions: os=linux & cpu=riscv64 & libc=musl
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-s390x-gnu@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-linux-s390x-gnu@npm:4.64.0"
+"@rollup/rollup-linux-s390x-gnu@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-linux-s390x-gnu@npm:4.64.10"
   conditions: os=linux & cpu=s390x & libc=glibc
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-x64-gnu@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-linux-x64-gnu@npm:4.64.0"
+"@rollup/rollup-linux-x64-gnu@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-linux-x64-gnu@npm:4.64.10"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@rollup/rollup-linux-x64-musl@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-linux-x64-musl@npm:4.64.0"
+"@rollup/rollup-linux-x64-musl@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-linux-x64-musl@npm:4.64.10"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@rollup/rollup-openbsd-x64@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-openbsd-x64@npm:4.64.0"
+"@rollup/rollup-openbsd-x64@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-openbsd-x64@npm:4.64.10"
   conditions: os=openbsd & cpu=x64
   languageName: node
   linkType: hard
 
-"@rollup/rollup-openharmony-arm64@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-openharmony-arm64@npm:4.64.0"
+"@rollup/rollup-openharmony-arm64@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-openharmony-arm64@npm:4.64.10"
   conditions: os=openharmony & cpu=arm64
   languageName: node
   linkType: hard
 
-"@rollup/rollup-win32-arm64-msvc@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-win32-arm64-msvc@npm:4.64.0"
+"@rollup/rollup-win32-arm64-msvc@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-win32-arm64-msvc@npm:4.64.10"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@rollup/rollup-win32-ia32-msvc@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-win32-ia32-msvc@npm:4.64.0"
+"@rollup/rollup-win32-ia32-msvc@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-win32-ia32-msvc@npm:4.64.10"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@rollup/rollup-win32-x64-gnu@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-win32-x64-gnu@npm:4.64.0"
+"@rollup/rollup-win32-x64-gnu@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-win32-x64-gnu@npm:4.64.10"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"@rollup/rollup-win32-x64-msvc@npm:4.64.0":
-  version: 4.64.0
-  resolution: "@rollup/rollup-win32-x64-msvc@npm:4.64.0"
+"@rollup/rollup-win32-x64-msvc@npm:4.64.10":
+  version: 4.64.10
+  resolution: "@rollup/rollup-win32-x64-msvc@npm:4.64.10"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -8838,9 +8848,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"micromark@npm:^4.0.0":
-  version: 4.0.2
-  resolution: "micromark@npm:4.0.2"
+"micromark@npm:4.0.3, micromark@npm:^4.0.0":
+  version: 4.0.3
+  resolution: "micromark@npm:4.0.3"
   dependencies:
     "@types/debug": "npm:^4.0.0"
     debug: "npm:^4.0.0"
@@ -8852,6 +8862,7 @@ __metadata:
     micromark-util-chunked: "npm:^2.0.0"
     micromark-util-combine-extensions: "npm:^2.0.0"
     micromark-util-decode-numeric-character-reference: "npm:^2.0.0"
+    micromark-util-edit-map: "npm:^1.0.0"
     micromark-util-encode: "npm:^2.0.0"
     micromark-util-normalize-identifier: "npm:^2.0.0"
     micromark-util-resolve-all: "npm:^2.0.0"
@@ -8859,7 +8870,7 @@ __metadata:
     micromark-util-subtokenize: "npm:^2.0.0"
     micromark-util-symbol: "npm:^2.0.0"
     micromark-util-types: "npm:^2.0.0"
-  checksum: 10/1b85e49c8f71013df2d07a59e477deb72cd325d41cc15f35b2aa52b8b7a93fed45498ce3e18ed34464a9afa9ba8a9210b2509454b2a2d16ac06c7429f562bfac
+  checksum: 10/a6a309bc07fb63f974f8916e7723b1a3b810a8fd029a51ad8d364718151b9ad5124aebe768d4e37c5cf027ae9492a1de6df855021866e3cc40894d0d2d50070d
   languageName: node
   linkType: hard
 
@@ -11023,36 +11034,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:*, rollup@npm:4.64.0":
-  version: 4.64.0
-  resolution: "rollup@npm:4.64.0"
+"rollup@npm:*, rollup@npm:4.64.10":
+  version: 4.64.10
+  resolution: "rollup@npm:4.64.10"
   dependencies:
     "@napi-rs/lzma-linux-x64-gnu": "npm:1.5.1"
-    "@rollup/rollup-android-arm-eabi": "npm:4.64.0"
-    "@rollup/rollup-android-arm64": "npm:4.64.0"
-    "@rollup/rollup-darwin-arm64": "npm:4.64.0"
-    "@rollup/rollup-darwin-x64": "npm:4.64.0"
-    "@rollup/rollup-freebsd-arm64": "npm:4.64.0"
-    "@rollup/rollup-freebsd-x64": "npm:4.64.0"
-    "@rollup/rollup-linux-arm-gnueabihf": "npm:4.64.0"
-    "@rollup/rollup-linux-arm-musleabihf": "npm:4.64.0"
-    "@rollup/rollup-linux-arm64-gnu": "npm:4.64.0"
-    "@rollup/rollup-linux-arm64-musl": "npm:4.64.0"
-    "@rollup/rollup-linux-loong64-gnu": "npm:4.64.0"
-    "@rollup/rollup-linux-loong64-musl": "npm:4.64.0"
-    "@rollup/rollup-linux-ppc64-gnu": "npm:4.64.0"
-    "@rollup/rollup-linux-ppc64-musl": "npm:4.64.0"
-    "@rollup/rollup-linux-riscv64-gnu": "npm:4.64.0"
-    "@rollup/rollup-linux-riscv64-musl": "npm:4.64.0"
-    "@rollup/rollup-linux-s390x-gnu": "npm:4.64.0"
-    "@rollup/rollup-linux-x64-gnu": "npm:4.64.0"
-    "@rollup/rollup-linux-x64-musl": "npm:4.64.0"
-    "@rollup/rollup-openbsd-x64": "npm:4.64.0"
-    "@rollup/rollup-openharmony-arm64": "npm:4.64.0"
-    "@rollup/rollup-win32-arm64-msvc": "npm:4.64.0"
-    "@rollup/rollup-win32-ia32-msvc": "npm:4.64.0"
-    "@rollup/rollup-win32-x64-gnu": "npm:4.64.0"
-    "@rollup/rollup-win32-x64-msvc": "npm:4.64.0"
+    "@rollup/rollup-android-arm-eabi": "npm:4.64.10"
+    "@rollup/rollup-android-arm64": "npm:4.64.10"
+    "@rollup/rollup-darwin-arm64": "npm:4.64.10"
+    "@rollup/rollup-darwin-x64": "npm:4.64.10"
+    "@rollup/rollup-freebsd-arm64": "npm:4.64.10"
+    "@rollup/rollup-freebsd-x64": "npm:4.64.10"
+    "@rollup/rollup-linux-arm-gnueabihf": "npm:4.64.10"
+    "@rollup/rollup-linux-arm-musleabihf": "npm:4.64.10"
+    "@rollup/rollup-linux-arm64-gnu": "npm:4.64.10"
+    "@rollup/rollup-linux-arm64-musl": "npm:4.64.10"
+    "@rollup/rollup-linux-loong64-gnu": "npm:4.64.10"
+    "@rollup/rollup-linux-loong64-musl": "npm:4.64.10"
+    "@rollup/rollup-linux-ppc64-gnu": "npm:4.64.10"
+    "@rollup/rollup-linux-ppc64-musl": "npm:4.64.10"
+    "@rollup/rollup-linux-riscv64-gnu": "npm:4.64.10"
+    "@rollup/rollup-linux-riscv64-musl": "npm:4.64.10"
+    "@rollup/rollup-linux-s390x-gnu": "npm:4.64.10"
+    "@rollup/rollup-linux-x64-gnu": "npm:4.64.10"
+    "@rollup/rollup-linux-x64-musl": "npm:4.64.10"
+    "@rollup/rollup-openbsd-x64": "npm:4.64.10"
+    "@rollup/rollup-openharmony-arm64": "npm:4.64.10"
+    "@rollup/rollup-win32-arm64-msvc": "npm:4.64.10"
+    "@rollup/rollup-win32-ia32-msvc": "npm:4.64.10"
+    "@rollup/rollup-win32-x64-gnu": "npm:4.64.10"
+    "@rollup/rollup-win32-x64-msvc": "npm:4.64.10"
     "@types/estree": "npm:1.0.9"
     fsevents: "npm:~2.3.2"
   dependenciesMeta:
@@ -11112,7 +11123,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 10/7eb7802185af4861535f2a28c8aba0fb2d369edc9c7aebbae22beaf7b731bc62a20da319682cb93bfb480ad2d6eb98115f06c5bcf0628ec162250ac41b934308
+  checksum: 10/39982a71f41eb2ed2903c3b6d14ceb284d6b38d875b117c25370ceddac9d98658db10142eb78b2eb80af3c23e07aac004ba1106b107a05daa356e11a5ae79640
   languageName: node
   linkType: hard
 

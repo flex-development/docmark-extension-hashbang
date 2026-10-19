@@ -15,7 +15,7 @@ import comment from './comment.mts'
  * @const {NormalizedExtension} comments
  */
 const comments: NormalizedExtension = {
-  [constants.contentTypeSource]: { [codes.numberSign]: comment }
+  [constants.contentTypeComments]: { [codes.numberSign]: comment }
 }
 
 export default comments

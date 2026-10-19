@@ -10,6 +10,7 @@ import resolve from '@rollup/plugin-node-resolve'
 import { ok } from 'devlop'
 import ci from 'is-ci'
 import type {
+  InputOption,
   NormalizedOutputOptions,
   OutputBundle,
   Plugin,
@@ -23,9 +24,12 @@ import pkg from './package.json' with { type: 'json' }
 /**
  * The list of target files.
  *
- * @const {ReadonlyArray<string>} files
+ * @const {ReadonlyArray<InputOption>} files
  */
-const files: readonly string[] = ['./dist/index.d.mts', './dist/index.mjs']
+const files: readonly InputOption[] = [
+  { index: 'dist/index.mjs' },
+  'dist/index.d.mts'
+]
 
 /**
  * The rollup configuration.
@@ -34,7 +38,14 @@ const files: readonly string[] = ['./dist/index.d.mts', './dist/index.mjs']
  *
  * @type {RollupOptions[]}
  */
-export default files.map((input: string): RollupOptions => {
+export default files.map((input: InputOption): RollupOptions => {
+  /**
+   * The list of external dependencies.
+   *
+   * @const {string[]} external
+   */
+  const external: string[] = Object.keys(pkg.dependencies)
+
   /**
    * The list of plugins.
    *
@@ -42,25 +53,42 @@ export default files.map((input: string): RollupOptions => {
    */
   const plugins: (Plugin | Plugin[])[] = []
 
-  if (input.endsWith('.mjs')) {
-    plugins.push(
-      resolve(),
-      cleanup({ comments: 'none' }),
-      codecov({
-        bundleName: pkg.name,
-        debug: true,
-        enableBundleAnalysis: ci,
-        uploadToken: process.env['CODECOV_TOKEN']!
-      })
-    )
-  } else {
-    plugins.push(resolve({ extensions: ['.d.mts', '.mts'] }), dts())
+  // bundling typescript declarations.
+  if (typeof input === 'string') {
+    // locate modules using the node resolution algorithm.
+    plugins.push(resolve({ extensions: ['.d.mts', '.mts'] }))
+
+    // bundle declaration files and fix `type` modifiers.
+    plugins.push(dts())
+
+    return { external, input, output: { file: input, format: 'esm' }, plugins }
   }
 
+  // bundling runtime code.
+
+  // locate modules using the node resolution algorithm.
+  plugins.push(resolve())
+
+  // remove extraneous comments.
+  plugins.push(cleanup({ comments: 'none' }))
+
+  // support codecov bundle analysis.
+  plugins.push(codecov({
+    bundleName: pkg.name,
+    debug: true,
+    enableBundleAnalysis: ci,
+    uploadToken: process.env['CODECOV_TOKEN']!
+  }))
+
   return {
-    external: Object.keys(pkg.dependencies),
+    external,
     input,
-    output: [{ file: input, format: 'esm' }],
+    output: {
+      chunkFileNames: 'shared/[name].mjs',
+      dir: 'dist',
+      entryFileNames: '[name].mjs',
+      format: 'esm'
+    },
     plugins
   }
 })

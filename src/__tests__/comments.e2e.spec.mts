@@ -6,7 +6,6 @@
 import snapshot from '#tests/utils/snapshot-events'
 import { parse, postprocess, preprocess } from '@flex-development/docmark'
 import testSubject from '@flex-development/docmark-extension-hashbang'
-import { tt } from '@flex-development/docmark-util-symbol'
 import type {
   Chunk,
   FileLike,
@@ -34,13 +33,13 @@ describe('e2e:comments', () => {
     const slice: Chunk[] = preprocess()(file, undefined, true)
 
     // Act
-    const result = postprocess(parse(options).source().write(slice))
+    const result = postprocess(parse(options).comments().write(slice))
 
     // Expect
-    expect(result).to.have.property('length', 2)
-    expect(result).to.each.have.nested.property('1.type', tt.eoc)
+    expect(result).to.have.property('length').be.at.least(2)
     expect(result).to.each.have.nested.property('1.start')
     expect(result).to.each.have.nested.property('1.end')
+    expect(snapshot(result)).toMatchSnapshot()
   })
 
   it.each<[path: string]>([
@@ -62,7 +61,7 @@ describe('e2e:comments', () => {
     const slice: Chunk[] = preprocess()(file, undefined, true)
 
     // Act
-    const result = postprocess(parse(options).source().write(slice))
+    const result = postprocess(parse(options).comments().write(slice))
 
     // Expect
     expect(result).to.have.property('length').be.at.least(2)

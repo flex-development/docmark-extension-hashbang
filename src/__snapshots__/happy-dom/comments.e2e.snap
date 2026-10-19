@@ -1,5 +1,967 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`e2e:comments > should handle no comments ("empty/01.txt") 1`] = `
+[
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 1,
+        "line": 2,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "chunkLanguage",
+      "value": "
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 1,
+        "line": 2,
+        "offset": 1,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "chunkLanguage",
+      "value": "
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 3,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 1,
+        "line": 2,
+        "offset": 1,
+      },
+      "type": "chunkLanguage",
+      "value": "
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 3,
+        "offset": 2,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 1,
+        "line": 2,
+        "offset": 1,
+      },
+      "type": "chunkLanguage",
+      "value": "
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 3,
+        "column": 1,
+        "line": 4,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 3,
+        "offset": 2,
+      },
+      "type": "chunkLanguage",
+      "value": "
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 3,
+        "column": 1,
+        "line": 4,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 3,
+        "offset": 2,
+      },
+      "type": "chunkLanguage",
+      "value": "
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 4,
+        "column": 18,
+        "line": 4,
+        "offset": 20,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 3,
+        "column": 1,
+        "line": 4,
+        "offset": 3,
+      },
+      "type": "chunkLanguage",
+      "value": "#!/not/a/hashbang",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 4,
+        "column": 18,
+        "line": 4,
+        "offset": 20,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 3,
+        "column": 1,
+        "line": 4,
+        "offset": 3,
+      },
+      "type": "chunkLanguage",
+      "value": "#!/not/a/hashbang",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 5,
+        "column": 18,
+        "line": 4,
+        "offset": 20,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 4,
+        "column": 18,
+        "line": 4,
+        "offset": 20,
+      },
+      "type": "eoc",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 5,
+        "column": 18,
+        "line": 4,
+        "offset": 20,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 4,
+        "column": 18,
+        "line": 4,
+        "offset": 20,
+      },
+      "type": "eoc",
+    },
+  ],
+]
+`;
+
+exports[`e2e:comments > should handle no comments ("empty/02.txt") 1`] = `
+[
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 17,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "chunkLanguage",
+      "value": "# Add To Project
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 17,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 0,
+        "column": 1,
+        "line": 1,
+        "offset": 0,
+      },
+      "type": "chunkLanguage",
+      "value": "# Add To Project
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 4,
+        "column": 1,
+        "line": 3,
+        "offset": 19,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 17,
+      },
+      "type": "chunkLanguage",
+      "value": "#
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 4,
+        "column": 1,
+        "line": 3,
+        "offset": 19,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 17,
+      },
+      "type": "chunkLanguage",
+      "value": "#
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 6,
+        "column": 1,
+        "line": 4,
+        "offset": 76,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 4,
+        "column": 1,
+        "line": 3,
+        "offset": 19,
+      },
+      "type": "chunkLanguage",
+      "value": "# Add new issues and pull requests to the project board.
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 6,
+        "column": 1,
+        "line": 4,
+        "offset": 76,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 4,
+        "column": 1,
+        "line": 3,
+        "offset": 19,
+      },
+      "type": "chunkLanguage",
+      "value": "# Add new issues and pull requests to the project board.
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 8,
+        "column": 1,
+        "line": 5,
+        "offset": 78,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 6,
+        "column": 1,
+        "line": 4,
+        "offset": 76,
+      },
+      "type": "chunkLanguage",
+      "value": "#
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 8,
+        "column": 1,
+        "line": 5,
+        "offset": 78,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 6,
+        "column": 1,
+        "line": 4,
+        "offset": 76,
+      },
+      "type": "chunkLanguage",
+      "value": "#
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 10,
+        "column": 1,
+        "line": 6,
+        "offset": 92,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 8,
+        "column": 1,
+        "line": 5,
+        "offset": 78,
+      },
+      "type": "chunkLanguage",
+      "value": "# References:
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 10,
+        "column": 1,
+        "line": 6,
+        "offset": 92,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 8,
+        "column": 1,
+        "line": 5,
+        "offset": 78,
+      },
+      "type": "chunkLanguage",
+      "value": "# References:
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 12,
+        "column": 1,
+        "line": 7,
+        "offset": 94,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 10,
+        "column": 1,
+        "line": 6,
+        "offset": 92,
+      },
+      "type": "chunkLanguage",
+      "value": "#
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 12,
+        "column": 1,
+        "line": 7,
+        "offset": 94,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 10,
+        "column": 1,
+        "line": 6,
+        "offset": 92,
+      },
+      "type": "chunkLanguage",
+      "value": "#
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 14,
+        "column": 1,
+        "line": 8,
+        "offset": 160,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 12,
+        "column": 1,
+        "line": 7,
+        "offset": 94,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://docs.github.com/actions/learn-github-actions/contexts
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 14,
+        "column": 1,
+        "line": 8,
+        "offset": 160,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 12,
+        "column": 1,
+        "line": 7,
+        "offset": 94,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://docs.github.com/actions/learn-github-actions/contexts
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 16,
+        "column": 1,
+        "line": 9,
+        "offset": 229,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 14,
+        "column": 1,
+        "line": 8,
+        "offset": 160,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://docs.github.com/actions/learn-github-actions/expressions
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 16,
+        "column": 1,
+        "line": 9,
+        "offset": 229,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 14,
+        "column": 1,
+        "line": 8,
+        "offset": 160,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://docs.github.com/actions/learn-github-actions/expressions
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 18,
+        "column": 1,
+        "line": 10,
+        "offset": 318,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 16,
+        "column": 1,
+        "line": 9,
+        "offset": 229,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#issues
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 18,
+        "column": 1,
+        "line": 10,
+        "offset": 318,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 16,
+        "column": 1,
+        "line": 9,
+        "offset": 229,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#issues
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 20,
+        "column": 1,
+        "line": 11,
+        "offset": 413,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 18,
+        "column": 1,
+        "line": 10,
+        "offset": 318,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#pull_request
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 20,
+        "column": 1,
+        "line": 11,
+        "offset": 413,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 18,
+        "column": 1,
+        "line": 10,
+        "offset": 318,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#pull_request
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 22,
+        "column": 1,
+        "line": 12,
+        "offset": 505,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 20,
+        "column": 1,
+        "line": 11,
+        "offset": 413,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://docs.github.com/webhooks-and-events/webhooks/webhook-events-and-payloads#issues
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 22,
+        "column": 1,
+        "line": 12,
+        "offset": 505,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 20,
+        "column": 1,
+        "line": 11,
+        "offset": 413,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://docs.github.com/webhooks-and-events/webhooks/webhook-events-and-payloads#issues
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 24,
+        "column": 1,
+        "line": 13,
+        "offset": 603,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 22,
+        "column": 1,
+        "line": 12,
+        "offset": 505,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://docs.github.com/webhooks-and-events/webhooks/webhook-events-and-payloads#pull_request
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 24,
+        "column": 1,
+        "line": 13,
+        "offset": 603,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 22,
+        "column": 1,
+        "line": 12,
+        "offset": 505,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://docs.github.com/webhooks-and-events/webhooks/webhook-events-and-payloads#pull_request
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 26,
+        "column": 1,
+        "line": 14,
+        "offset": 649,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 24,
+        "column": 1,
+        "line": 13,
+        "offset": 603,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://github.com/actions/add-to-project
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 26,
+        "column": 1,
+        "line": 14,
+        "offset": 649,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 24,
+        "column": 1,
+        "line": 13,
+        "offset": 603,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://github.com/actions/add-to-project
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 28,
+        "column": 1,
+        "line": 15,
+        "offset": 704,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 26,
+        "column": 1,
+        "line": 14,
+        "offset": 649,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://github.com/actions/create-github-app-token
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 28,
+        "column": 1,
+        "line": 15,
+        "offset": 704,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 26,
+        "column": 1,
+        "line": 14,
+        "offset": 649,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://github.com/actions/create-github-app-token
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 30,
+        "column": 1,
+        "line": 16,
+        "offset": 746,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 28,
+        "column": 1,
+        "line": 15,
+        "offset": 704,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://github.com/hmarr/debug-action
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 30,
+        "column": 1,
+        "line": 16,
+        "offset": 746,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 28,
+        "column": 1,
+        "line": 15,
+        "offset": 704,
+      },
+      "type": "chunkLanguage",
+      "value": "# - https://github.com/hmarr/debug-action
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 31,
+        "column": 1,
+        "line": 16,
+        "offset": 746,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 30,
+        "column": 1,
+        "line": 16,
+        "offset": 746,
+      },
+      "type": "eoc",
+    },
+  ],
+  [
+    "exit",
+    {
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 31,
+        "column": 1,
+        "line": 16,
+        "offset": 746,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 30,
+        "column": 1,
+        "line": 16,
+        "offset": 746,
+      },
+      "type": "eoc",
+    },
+  ],
+]
+`;
+
 exports[`e2e:comments > should parse hashbang comments ("opener-only/01.txt",undefined) 1`] = `
 [
   [
@@ -382,6 +1344,98 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/02.txt",und
   [
     "enter",
     {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "chunkLanguage",
+      "value": "
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "chunkLanguage",
+      "value": "
+",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 4,
+        "column": 1,
+        "line": 3,
+        "offset": 6,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 3,
+      },
+      "type": "chunkLanguage",
+      "value": "#!
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 4,
+        "column": 1,
+        "line": 3,
+        "offset": 6,
+      },
+      "start": {
+        "_bufferIndex": 0,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 3,
+      },
+      "type": "chunkLanguage",
+      "value": "#!
+",
+    },
+  ],
+  [
+    "enter",
+    {
       "end": {
         "_bufferIndex": -1,
         "_index": 5,
@@ -593,6 +1647,50 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/03.txt",und
   [
     "enter",
     {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "chunkLanguage",
+      "value": " ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 4,
+        "line": 1,
+        "offset": 3,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "chunkLanguage",
+      "value": " ",
+    },
+  ],
+  [
+    "enter",
+    {
       "end": {
         "_bufferIndex": -1,
         "_index": 2,
@@ -799,6 +1897,52 @@ exports[`e2e:comments > should parse hashbang comments ("opener-only/04.txt",und
         "offset": 0,
       },
       "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 5,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "chunkLanguage",
+      "value": "  
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 5,
+      },
+      "start": {
+        "_bufferIndex": 2,
+        "_index": 0,
+        "column": 3,
+        "line": 1,
+        "offset": 2,
+      },
+      "type": "chunkLanguage",
+      "value": "  
+",
     },
   ],
   [
@@ -1649,6 +2793,50 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/03.txt",undef
   [
     "enter",
     {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 14,
+        "line": 1,
+        "offset": 13,
+      },
+      "start": {
+        "_bufferIndex": 10,
+        "_index": 0,
+        "column": 11,
+        "line": 1,
+        "offset": 10,
+      },
+      "type": "chunkLanguage",
+      "value": "   ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 14,
+        "line": 1,
+        "offset": 13,
+      },
+      "start": {
+        "_bufferIndex": 10,
+        "_index": 0,
+        "column": 11,
+        "line": 1,
+        "offset": 10,
+      },
+      "type": "chunkLanguage",
+      "value": "   ",
+    },
+  ],
+  [
+    "enter",
+    {
       "end": {
         "_bufferIndex": -1,
         "_index": 2,
@@ -1897,6 +3085,52 @@ exports[`e2e:comments > should parse hashbang comments ("path-only/04.txt",undef
         "offset": 0,
       },
       "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": 11,
+        "_index": 0,
+        "column": 12,
+        "line": 1,
+        "offset": 11,
+      },
+      "type": "chunkLanguage",
+      "value": "   
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 15,
+      },
+      "start": {
+        "_bufferIndex": 11,
+        "_index": 0,
+        "column": 12,
+        "line": 1,
+        "offset": 11,
+      },
+      "type": "chunkLanguage",
+      "value": "   
+",
     },
   ],
   [
@@ -3125,6 +4359,50 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/03.txt",
   [
     "enter",
     {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 44,
+        "line": 1,
+        "offset": 43,
+      },
+      "start": {
+        "_bufferIndex": 40,
+        "_index": 0,
+        "column": 41,
+        "line": 1,
+        "offset": 40,
+      },
+      "type": "chunkLanguage",
+      "value": "   ",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 1,
+        "column": 44,
+        "line": 1,
+        "offset": 43,
+      },
+      "start": {
+        "_bufferIndex": 40,
+        "_index": 0,
+        "column": 41,
+        "line": 1,
+        "offset": 40,
+      },
+      "type": "chunkLanguage",
+      "value": "   ",
+    },
+  ],
+  [
+    "enter",
+    {
       "end": {
         "_bufferIndex": -1,
         "_index": 2,
@@ -3541,6 +4819,52 @@ exports[`e2e:comments > should parse hashbang comments ("with-arguments/04.txt",
         "offset": 0,
       },
       "type": "comment",
+    },
+  ],
+  [
+    "enter",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 54,
+      },
+      "start": {
+        "_bufferIndex": 50,
+        "_index": 0,
+        "column": 51,
+        "line": 1,
+        "offset": 50,
+      },
+      "type": "chunkLanguage",
+      "value": "   
+",
+    },
+  ],
+  [
+    "exit",
+    {
+      "contentType": "language",
+      "end": {
+        "_bufferIndex": -1,
+        "_index": 2,
+        "column": 1,
+        "line": 2,
+        "offset": 54,
+      },
+      "start": {
+        "_bufferIndex": 50,
+        "_index": 0,
+        "column": 51,
+        "line": 1,
+        "offset": 50,
+      },
+      "type": "chunkLanguage",
+      "value": "   
+",
     },
   ],
   [

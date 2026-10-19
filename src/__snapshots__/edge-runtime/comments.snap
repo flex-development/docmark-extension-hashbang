@@ -2,7 +2,7 @@
 
 exports[`unit:comments > should be extension 1`] = `
 {
-  "source": {
+  "comments": {
     "35": {
       "continuation": {
         "tokenize": [Function tokenizeHashbangContinuation],
