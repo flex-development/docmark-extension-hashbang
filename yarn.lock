@@ -1754,7 +1754,7 @@ __metadata:
     happy-dom: "npm:21.0.4"
     husky: "npm:9.1.7"
     is-ci: "npm:4.1.0"
-    node-notifier: "npm:11.0.0"
+    node-notifier: "npm:12.1.0"
     remark: "npm:15.0.1"
     remark-cli: "npm:12.0.1"
     rollup: "npm:4.67.2"
@@ -9109,13 +9109,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-notifier@npm:11.0.0":
-  version: 11.0.0
-  resolution: "node-notifier@npm:11.0.0"
+"node-notifier@npm:12.1.0":
+  version: 12.1.0
+  resolution: "node-notifier@npm:12.1.0"
   dependencies:
     growly: "npm:^1.3.0"
     is-wsl: "npm:^3.1.1"
-  checksum: 10/3922798b7d6fe0309beb2dcd94959692eef6902e317106eac3c8b7f90c1b86f7f902fecdb5ac1a7fbfba0d21c5e1bec7ec771911f990fa943488bf5b96a57154
+  checksum: 10/198982a495d82198c8aa90a648d77081c2b47196f8f081035249472da5aeaecf59ec1576b1e17ca2cbfd5a4346bee6bbe925a14a219c6a81a9d11f6ed4f11064
   languageName: node
   linkType: hard
 
